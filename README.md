@@ -22,3 +22,5 @@ Your mentor is there to help you.  Don't let them die of boredom - talk to them 
 * [Step 1 - set up your project](step1.md)
 * [Step 2 - building the server](step2.md)
 * [Step 3 - communicate with the server](step3.md)
+* [Step 4 - requests/responses](step4.md)
+* [Step 5 - serving your assets](step5.md)

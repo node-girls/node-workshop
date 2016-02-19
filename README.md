@@ -20,3 +20,4 @@ Your mentor is there to help you.  Don't let them die of boredom - talk to them 
 
 ## Walkthrough
 * [Step 1 - set up your project](step1.md)
+* [Step 2 - building the server](step2.md)

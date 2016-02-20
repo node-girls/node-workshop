@@ -51,7 +51,7 @@ The npm command-line tool comes automatically with Node.  You can install 3rd-pa
 
 Also called a module, but slightly different from the first two.
 
-These are modules you write yourself in your code.  We will talk about this later on.
+These are modules you write yourself in your code.  We will talk about this later on in step 7.
 
 ### Time to code!!!
 ---

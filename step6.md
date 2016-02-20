@@ -98,11 +98,12 @@ You should now see an object in the console.  The key should be `blogpost`, just
 
 
 More info
-* html forms
-* [POST vs GET](http://www.w3schools.com/tags/ref_httpmethods.asp)
-* https://nodejs.org/api/stream.html#stream_readable_setencoding_encoding
-* [`querystring` core module](https://nodejs.org/api/querystring.html)
-Readable stream and writeable stream
+
+
+
 
 Keywords
-stream
+* stream
+* [`querystring` core module](https://nodejs.org/api/querystring.html)
+* [POST vs GET](http://www.w3schools.com/tags/ref_httpmethods.asp)
+* [html forms]

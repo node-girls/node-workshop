@@ -99,7 +99,7 @@ You should now see an object in the console.  The key should be `blogpost`, just
 ##[Next >>](step7.md)
 
 
-Keywords
+### Keywords
 * stream
 * [`querystring` core module](https://nodejs.org/api/querystring.html)
 * [POST vs GET](http://www.w3schools.com/tags/ref_httpmethods.asp)

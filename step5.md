@@ -12,7 +12,7 @@ So you may or may not have noticed that the index page is slightly broken.
 
 You may also have noticed that the page is looking kinda plain.  There's no css being loaded in either!
 
-## <script>, <img> and <link> tags send requests too!
+## **script**, **img** and **link** tags send requests too!
 
 As you know, typing a URL into your browser and hitting enter initiates a request to a server somewhere.  Once you load in your index page, something interesting happens.
 
@@ -61,6 +61,7 @@ response.writeHead(200, {"Content-Type": "text/html"});
 
 * stretch goal: rewrite file extension detector with regex
 
+## [**next step >>>**](step6.md)
 
 ## Keywords
 * assets

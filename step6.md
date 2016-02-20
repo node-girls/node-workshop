@@ -96,7 +96,7 @@ request.on('end', function () {
 You should now see an object in the console.  The key should be `blogpost`, just like the name attribute in the form.  The value of `blogpost` will be your message!
 
 
-##[Next >>](step7.md)
+## [**Next step >>>**](step7.md)
 
 
 ### Keywords

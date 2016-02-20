@@ -24,3 +24,5 @@ Your mentor is there to help you.  Don't let them die of boredom - talk to them 
 * [Step 3 - communicate with the server](step3.md)
 * [Step 4 - requests/responses](step4.md)
 * [Step 5 - serving your assets](step5.md)
+* [Step 6 - sending your blog post to your server](step6.md)
+* [Step 7 - reorganising your project](step7.md)

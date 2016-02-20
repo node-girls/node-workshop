@@ -85,6 +85,9 @@ See if you can do this by yourself.  Work with your team if you're struggling.
 You could split `handler.js` even further, by separating your routes from your handler.  We will not do this now.
 
 
+## [**Next step >>>**](step8.md)
+
+
 ## Keywords
 * root
 * relative paths

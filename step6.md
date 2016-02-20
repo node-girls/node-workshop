@@ -82,7 +82,7 @@ Node has a core module called `querystring` that does this conversion for us.
 
 You will need to use `querystring.parse()` to convert the `allTheData` query string to an object.
 
-**Add the following to your code***
+**Add the following to your code**
 
 ```js
 request.on('end', function () {

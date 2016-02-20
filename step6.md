@@ -95,6 +95,13 @@ request.on('end', function () {
 
 You should now see an object in the console.  The key should be `blogpost`, just like the name attribute in the form.  The value of `blogpost` will be your message!
 
+## Commit your changes
+
+```bash
+git add .
+git commit -m 'enter relevant message'
+git push origin step6
+```
 
 ## [**Next step >>>**](step7.md)
 

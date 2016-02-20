@@ -80,6 +80,14 @@ function handler (request, response) {
 }
 ```
 
+## Commit your changes
+
+```bash
+git add .
+git commit -m 'enter relevant message'
+git push origin step4
+```
+
 ## [**next step >>>**](step5.md)
 
 

@@ -61,6 +61,14 @@ response.writeHead(200, {"Content-Type": "text/html"});
 
 * stretch goal: rewrite file extension detector with regex
 
+## Commit your changes
+
+```bash
+git add .
+git commit -m 'enter relevant message'
+git push origin step5
+```
+
 ## [**next step >>>**](step6.md)
 
 ## Keywords

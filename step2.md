@@ -122,6 +122,14 @@ If you see this...
 ### congratulations!
 You have built yourself a server!
 
+## Commit your changes
+
+```bash
+git add .
+git commit -m 'enter relevant message'
+git push origin step2
+```
+
 ## [**next step** >>>](step3.md)
 
 ## Keywords

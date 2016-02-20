@@ -87,6 +87,14 @@ node server.js
 
 If you see your message in the browser, **congratulations** you just sent your first response from the server.
 
+## Commit your changes
+
+```bash
+git add .
+git commit -m 'enter relevant message'
+git push origin step3
+```
+
 ## [**next step >>>**](step4.md)
 
 ### Keywords: 

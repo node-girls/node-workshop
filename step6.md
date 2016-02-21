@@ -112,7 +112,7 @@ Look at one of the headers you've set already:
 response.writeHead(200, {"Content-Type": "text/html"});
 ```
 
-Instead of a "Content-Type" header, this time you will need a **"Location"** response header in your object.  The value of the object should be the endpoint you want the page to reload to.
+Instead of a "Content-Type" header, this time you will need a **"Location"** response header in your object.  The value of the object should be the endpoint you want the page to redirect to.
 
 You'll also want to use a **different status code from 200**.  Look at a list of [status codes here](https://httpstatuses.com/) and have an experiment.
 

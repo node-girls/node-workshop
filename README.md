@@ -17,6 +17,8 @@ Make sure to checkout to the relevant branch before continuing.
 
 You will see code snippets throughout the walkthrough.  Try to resist the urge to copy and paste - you will learn **much** more if you get into the habit of typing things out.
 
+You might want to test out small bits of code and run them before adding it to your project.  For this, you can use [repl.it](https://repl.it/) if you like.
+
 
 Your mentor is there to help you.  Don't let them die of boredom - talk to them and ask questions!
 

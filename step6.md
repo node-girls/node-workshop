@@ -1,6 +1,6 @@
 # Step 6 - Sending your blog post to your server
 
-```
+```bash
 git checkout step6
 git merge step5
 ```
@@ -95,6 +95,7 @@ request.on('end', function () {
 
 You should now see an object in the console.  The key should be `blogpost`, just like the name attribute in the form.  The value of `blogpost` will be your message!
 
+---
 ## Commit your changes
 
 ```bash
@@ -105,7 +106,7 @@ git push origin step6
 
 ## [**Next step >>>**](step7.md)
 
-
+---
 ### Keywords
 * stream
 * [`querystring` core module](https://nodejs.org/api/querystring.html)

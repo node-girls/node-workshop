@@ -1,6 +1,6 @@
 # Step 1 - Set up your first project
 
-```
+```bash
 git checkout step1
 ```
 
@@ -62,6 +62,7 @@ Don't worry if you've made a mistake, your mentor can help you.
 
 Great!  You should now see a new file called `package.json`.
 
+---
 ## Commit your changes
 
 ```bash
@@ -71,7 +72,7 @@ git push origin step1
 ```
 
 ## [**next step >>>**](step2.md)
-
+---
 ## Keywords
 * git checkout
 * [`package.json`](http://browsenpm.org/package.json)

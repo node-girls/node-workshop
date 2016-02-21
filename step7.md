@@ -1,6 +1,6 @@
 # Step 7 - reorganising your project
 
-```
+```bash
 git checkout step7
 git merge step6
 ```
@@ -84,6 +84,7 @@ See if you can do this by yourself.  Work with your team if you're struggling.
 
 You could split `handler.js` even further, by separating your routes from your handler.  We will not do this now.
 
+---
 ## Commit your changes
 
 ```bash
@@ -94,7 +95,7 @@ git push origin step7
 
 ## [**Next step >>>**](step8.md)
 
-
+---
 ## Keywords
 * root
 * relative paths

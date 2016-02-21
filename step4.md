@@ -1,11 +1,11 @@
 # Step 4 - Request/responses
 
-```
+```bash
 git checkout step4
 git merge step3
 ```
 
-At the moment our server only does one thing. When it receives any requests, it sends back the same response - your message. 
+At the moment our server only does one thing. When it receives any requests, it sends back the same response - your message.
 
 **If you don't believe try typing localhost:3000/chocolate and see what happens**
 
@@ -23,7 +23,7 @@ There is a particular method on request object which allows you to see the endpo
 var endpoint = request.url;
 console.log(endpoint);
 
-``` 
+```
 
 All requests use one of the HTTP methods. The main ones are: `GET, POST, PUT, DELETE`.  
 
@@ -36,21 +36,21 @@ All requests use one of the HTTP methods. The main ones are: `GET, POST, PUT, DE
 var method = request.method;
 console.log(method);
 
-``` 
+```
 
 ## 1. Create your own endpoints and send different responses.
 
-Now, you know how to get the endpoint using `request.url`. Change your handler function so that it sends one message when requested url is `/node` and another one when requested url is `/girls`. 
+Now, you know how to get the endpoint using `request.url`. Change your handler function so that it sends one message when requested url is `/node` and another one when requested url is `/girls`.
 
 Good luck :) Feel free to discuss it with your team or mentor.
 
 ## 2. Serve index.html
 
-Now you know how to send the message. How do you send a whole html page? 
+Now you know how to send the message. How do you send a whole html page?
 
-To be able to send any file from the server we need a core node module called `fs` - file system. `Fs` allows you to read and write to and from your hard drive. Before we can send our `index.html`, our server first needs to read it. 
+To be able to send any file from the server we need a core node module called `fs` - file system. `Fs` allows you to read and write to and from your hard drive. Before we can send our `index.html`, our server first needs to read it.
 
-One of the `fs` methods is `fs.readFile('path to the file', callback);`. You can read more about `fs` [here](https://nodejs.org/dist/latest-v4.x/docs/api/fs.html#fs_fs_readfile_file_options_callback). 
+One of the `fs` methods is `fs.readFile('path to the file', callback);`. You can read more about `fs` [here](https://nodejs.org/dist/latest-v4.x/docs/api/fs.html#fs_fs_readfile_file_options_callback).
 
 
 Let's try it.
@@ -79,7 +79,7 @@ function handler (request, response) {
   }
 }
 ```
-
+---
 ## Commit your changes
 
 ```bash
@@ -90,14 +90,9 @@ git push origin step4
 
 ## [**next step >>>**](step5.md)
 
-
+---
 ### Keywords:
 - http methods
 - fs
 - fs.readFile()
 - __dirname
-
-
-
-
-

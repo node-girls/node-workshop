@@ -48,7 +48,8 @@ Good luck :) Feel free to discuss it with your team or mentor.
 
 Now you know how to send the message. How do you send a whole html page?
 
-To be able to send any file from the server we need a core node module called `fs` - file system. `Fs` allows you to read and write to and from your hard drive. Before we can send our `index.html`, our server first needs to read it.
+To be able to send any file from the server we need a core node module called `fs` - **file system.** 
+`Fs` allows you to **read and write** to and from your hard drive. Before we can send our `index.html`, our server first needs to read it.
 
 One of the `fs` methods is `fs.readFile('path to the file', callback);`. You can read more about `fs` [here](https://nodejs.org/dist/latest-v4.x/docs/api/fs.html#fs_fs_readfile_file_options_callback).
 

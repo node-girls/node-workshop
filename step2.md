@@ -41,9 +41,9 @@ There is a list of all the core modules and their methods on the [Node.js websit
 There are thousands of open-source, 3rd-party Node modules that other clever people have written. You can download useful 3rd-party modules (also known as "packages") from the [Node Package Manager](http://npmjs.com).
 
 The NPM website says:
-```
-npm makes it easy for JavaScript developers to share and reuse code, and it makes it easy to update the code that you're sharing.
-```
+
+> npm makes it easy for JavaScript developers to share and reuse code, and it makes it easy to update the code that you're sharing.
+
 The npm command-line tool comes automatically with Node.  You can install 3rd-party packages on the command line, so no need to download from the npm website or anything.
 
 #### c. Modules you've written

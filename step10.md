@@ -15,7 +15,7 @@ You probably want to handle the request from that `script.js` file in your serve
 
 At the moment, your blog posts are reaching the server, but aren't being saved anywhere.  They just disappear into a cloud of bits and bytes.  We need to find a way to save them so that you can retrieve them later.
 
-You'll note that in the `lib` folder there's a new file called `posts.json`.  
+You'll note that in the `src` folder there's a new file called `posts.json`.  
 
 JSON is a type of file for structuring data in a readable way.  They're also a really popular format for sending data across the web.
 
@@ -44,8 +44,11 @@ fs.writeFile('path/to/file', yourData, (error) {
 
 
 **Modify your server code to:**
+
 1. **Save your blog post data into `posts.json`**
+
 2. **Handle the `script.js` request coming into the server**
+
 3. **Retrieve all your posts and send them back to `script.js`**
 
 

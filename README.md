@@ -1,3 +1,5 @@
+![logo](readme-images/logo.png) presents:
+
 # workshop-cms
 
 [![HitCount](https://hitt.herokuapp.com/node-girls/workshop-cms.svg)](https://github.com/node-girls/workshop-cms)

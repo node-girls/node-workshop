@@ -27,3 +27,6 @@ Your mentor is there to help you.  Don't let them die of boredom - talk to them 
 * [Step 6 - sending your blog post to your server](step6.md)
 * [Step 7 - reorganising your project](step7.md)
 * [Step 8 - get ready for the cms project](step8.md)
+* [Step 9 - build the CMS](step9.md)
+* [Step 10 - save your blog posts](step10.md)
+* [strech - stretch goals](stretch.md)

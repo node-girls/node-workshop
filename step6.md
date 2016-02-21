@@ -74,6 +74,8 @@ request.on('end', function () {
 
 (We still need `response.end()` to finish, even though we're not sending anything back to the client here.)
 
+### Query strings
+
 If you look in the console, you will probably see something a bit strange.  This is because html forms send data over the internet as **query strings**.  When we receive the form data in our server, we need to convert it from a query string into an Javascript object, so that we can use it.
 
 Node has a core module called `querystring` that does this conversion for us.
@@ -94,6 +96,25 @@ request.on('end', function () {
 ```
 
 You should now see an object in the console.  The key should be `blogpost`, just like the name attribute in the form.  The value of `blogpost` will be your message!
+
+
+### Redirecting your page
+
+So you may have noticed that when you hit Send on the form, the browser tries to follow the link to '/create-post' and load a non-existent page.  Awkward.
+
+There's an easy fix for this.  In the response, you need to let the browser know that you want it to reload the same page, and not try to go to fake page '/create-post'.  
+
+You can set this information in the status code response header.  
+
+Look at one of the headers you've set already:
+
+```js
+response.writeHead(200, {"Content-Type": "text/html"});
+```
+
+Instead of a "Content-Type" header, this time you will need a **"Location"** response header in your object.  The value of the object should be the endpoint you want the page to redirect to.
+
+You'll also want to use a **different status code from 200**.  Look at a list of [status codes here](https://httpstatuses.com/) and have an experiment.
 
 ---
 ## Commit your changes

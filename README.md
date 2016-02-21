@@ -15,6 +15,8 @@ git merge [name of previous branch]
 
 Make sure to checkout to the relevant branch before continuing.
 
+You will see code snippets throughout the walkthrough.  Try to resist the urge to copy and paste - you will learn **much** more if you get into the habit of typing things out.
+
 
 Your mentor is there to help you.  Don't let them die of boredom - talk to them and ask questions!
 

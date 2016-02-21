@@ -8,8 +8,9 @@ This is often referred to as a **content management system** (CMS).
 At the start of each step, you will need to 'checkout' to a new branch on Git.  
 At the top of your instructions you'll see something like this:
 
-```
+```bash
 git checkout [name of a particular branch]
+git merge [name of previous branch]
 ```
 
 Make sure to checkout to the relevant branch before continuing.
@@ -29,4 +30,4 @@ Your mentor is there to help you.  Don't let them die of boredom - talk to them 
 * [Step 8 - get ready for the cms project](step8.md)
 * [Step 9 - build the CMS](step9.md)
 * [Step 10 - save your blog posts](step10.md)
-* [strech - stretch goals](stretch.md)
+* [stretch - stretch goals](stretch.md)

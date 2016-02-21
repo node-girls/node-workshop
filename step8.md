@@ -1,6 +1,6 @@
 # Step 8 - Get ready for the cms project
 
-```
+```bash
 git checkout step8
 git merge step7
 ```

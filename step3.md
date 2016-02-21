@@ -1,16 +1,16 @@
 # Step 3 - Communicate with the server
 
-```
+```bash
 git checkout step3
 git merge step2
 ```
 
-### What is a handler function? 
+### What is a handler function?
 
 When a request reaches the server, we need a way of responding to it. In comes the **handler** function. The handler function is just a function which receives requests and handles them, hence the name.
 
-The handler function always takes a `request` and `response` object and sends the response back to the client along with some information. You can decide what to send back in your response. 
-  
+The handler function always takes a `request` and `response` object and sends the response back to the client along with some information. You can decide what to send back in your response.
+
 ```js
 function handler (request, response) {
   //dealing with request and sending response
@@ -30,7 +30,7 @@ var http = require('http');
 var message = 'I am so happy to be part of the Node Girls workshop!';
 
 function handler (request, response) {
-  
+
 }
 
 
@@ -48,8 +48,8 @@ server.listen(3000, function () {
 
 We want our handler function to send our message in a response. To do that we will use one of the method of `response` object, which is: ```response.write()```. You can find more about `response.write()` [here](https://nodejs.org/dist/latest-v4.x/docs/api/http.html#http_response_write_chunk_encoding_callback)
 
-Every response has a header, which contains information about the response. We can add information to the header using `response.writeHead()`. The `writeHead` takes 
-2 parameters: status code and header object. 
+Every response has a header, which contains information about the response. We can add information to the header using `response.writeHead()`. The `writeHead` takes
+2 parameters: status code and header object.
 
 **Add these line to the handler function**
 
@@ -74,7 +74,7 @@ var server = http.createServer(handler);
 
 ```
 
-## 4. Rerun your server and go to your favourite browser 
+## 4. Rerun your server and go to your favourite browser
 
 **Rerun your server by typing again**
 
@@ -87,6 +87,7 @@ node server.js
 
 If you see your message in the browser, **congratulations** you just sent your first response from the server.
 
+---
 ## Commit your changes
 
 ```bash
@@ -96,10 +97,7 @@ git push origin step3
 ```
 
 ## [**next step >>>**](step4.md)
-
-### Keywords: 
+---
+### Keywords:
 * status code
 * writeHead()
-
-
-

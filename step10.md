@@ -24,7 +24,9 @@ fs.writeFile('path/to/file', yourData, (error) {
 });
 ```
 
-You'll note that in the `lib` folder there's a new file called `posts.json`.  JSON is a type of file for structuring data in a readable way.  JSON objects convert really easily to Javascript objects, and vice versa, with `JSON.parse()` and `JSON.stringify()`.  
+You'll note that in the `lib` folder there's a new file called `posts.json`.  
+
+JSON is a type of file for structuring data in a readable way.  JSON objects convert really easily to Javascript objects, and vice versa, with `JSON.parse()` and `JSON.stringify()`.  
 
 (If you're not sure about Javascript objects, have a chat with your mentor and your team.)
 
@@ -37,7 +39,6 @@ If all goes well, you should have a fully functional CMS!
 
 
 🎉CONGRATULATIONS!!🎉
-
 ===
 
 ---

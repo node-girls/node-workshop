@@ -1,6 +1,6 @@
 # Step 5 - Serving your assets
 
-```
+```bash
 git checkout step5
 git merge step4
 ```
@@ -61,6 +61,7 @@ response.writeHead(200, {"Content-Type": "text/html"});
 
 * stretch goal: rewrite file extension detector with regex
 
+---
 ## Commit your changes
 
 ```bash
@@ -70,6 +71,6 @@ git push origin step5
 ```
 
 ## [**next step >>>**](step6.md)
-
+---
 ## Keywords
 * assets

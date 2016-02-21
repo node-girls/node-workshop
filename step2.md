@@ -1,7 +1,6 @@
 # Step 2 - Building the server
 
-
-```
+```bash
 git checkout step2
 git merge step1
 ```
@@ -121,7 +120,7 @@ If you see this...
 
 ### congratulations!
 You have built yourself a server!
-
+---
 ## Commit your changes
 
 ```bash
@@ -131,7 +130,7 @@ git push origin step2
 ```
 
 ## [**next step** >>>](step3.md)
-
+---
 ## Keywords
 * server
 * client

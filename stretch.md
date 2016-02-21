@@ -13,11 +13,11 @@ It would be a great idea to create a new branch on Git for yourself, so you can 
 ### More modularisation!
 Currently, `handler.js` is a combination of decisions and actions.  The decisions are the  the if-else branches that look at the request url, and the actions are the bits inside the curly brackets.
 
-You could split out the decision part to its own file, `routes.js`.  Then the actual actions (so, the functions you call) would remain in `handler.js`.  `routes.js` 
+You could split out the decision part to its own file, `routes.js`.  Then the actual actions (so, the functions you call) would remain in `handler.js`.  `routes.js`
 
 
 ### Use a database
-Instead of writing to a file on your hard drive, you could save your blogposts in a database, which would be much quicker in terms of performance if there was a lot of data.
+Instead of writing to a file on your hard drive, you could save your blog posts in a database, which would be much quicker in terms of performance if there was a lot of data.
 
 * [MongoDB](https://docs.mongodb.org/getting-started/node/)
 [Redis]

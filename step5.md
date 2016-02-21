@@ -20,7 +20,7 @@ Note the `<link>` and `<img>` tags in the `index.html` page.  Here they're looki
 
 So there's actually **three** requests going on here.  One is the original browser request, another is a request sent by `<link>`, and the last one is a request sent by `<img>`
 
-So how do we deal with these two extra requests in our handler?
+#### So how do we deal with these two extra requests in our handler?
 
 You *could* write more routes in your handler for the `image.jpg` and `main.css` files in the public folder.  But what if you had multiple css files, or multiple images?  Writing routes for *all* of them would get very tedious very quickly!
 
@@ -52,10 +52,12 @@ Hints:
 * You'll want to think about how to tell `fs.readFile` which file you're looking for.  For the `/` endpoint we were specific about serving index.html every time.  This time we want to be able to serve *any* file that was requested.
 * All your files are in the `public` folder, so make sure to tell `fs.readFile` where to look!
 * When sending back the response, you'll want to alter the information for your header.  In the examples so far we have seen:
+
 ```js
 response.writeHead(200, {"Content-Type": "text/html"});
 ```
-    This is perfect if the file we're sending back is an html file.  But if it's any other file, html will need to be replaced by the relevant filetype.  using Javascript's `indexOf()` method might be useful.  More info on that [here]()
+
+This is perfect if the file we're sending back is an html file.  But if it's any other file, html will need to be replaced by the relevant filetype.  using Javascript's `indexOf()` method might be useful.  More info on that [here]()
 
 * maybe make them write their own file extension detector?  hint === indexOf
 

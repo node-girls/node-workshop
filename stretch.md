@@ -15,6 +15,8 @@ Currently, `handler.js` is a combination of decisions and actions.  The decision
 
 You could split out the decision part to its own file, `routes.js`.  Then the actual actions (so, the functions you call) would remain in `handler.js`.  `routes.js`
 
+![routes-handlers](readme-images/stretch-routes-handlers.png)
+
 
 ### Use a database
 Instead of writing to a file on your hard drive, you could save your blog posts in a database, which would be much quicker in terms of performance if there was a lot of data.

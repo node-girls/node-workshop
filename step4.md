@@ -48,6 +48,8 @@ Good luck :) Feel free to discuss it with your team or mentor.
 
 Now you know how to send the message. How do you send a whole html page?
 
+You will see that we have a `public` folder with `index.html` and an image.
+
 To be able to send any file from the server we need a core node module called `fs` - **file system.** 
 `Fs` allows you to **read and write** to and from your hard drive. Before we can send our `index.html`, our server first needs to read it.
 
@@ -69,7 +71,7 @@ function handler (request, response) {
   if (url.length === "/") {
     response.writeHead(200, {"Content-Type": "text/html"});
 
-    fs.readFile(__dirname + '/index.html', function(error, file) {
+    fs.readFile(__dirname + '/public/index.html', function(error, file) {
       if (error) {
         console.log(error);
         return;
@@ -80,6 +82,8 @@ function handler (request, response) {
   }
 }
 ```
+
+**__dirname** is a Node global object that gives you a path to current working directory. We can use this instead of writing th whole path. 
 ---
 ## Commit your changes
 
@@ -96,4 +100,4 @@ git push origin step4
 - http methods
 - fs
 - fs.readFile()
-- __dirname
+- [__dirname](https://nodejs.org/docs/latest/api/globals.html#globals_dirname)

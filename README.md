@@ -1,10 +1,12 @@
-![logo](readme-images/logo.png) presents:
+<img src="readme-images/logo.png" alt="node-girls-logo" styles="text-align:center;" />
 
-# workshop-cms
+<h2 styles="text-align:center;">presents...</h2>
+
+# Node.js CMS workshop
 
 [![HitCount](https://hitt.herokuapp.com/node-girls/workshop-cms.svg)](https://github.com/node-girls/workshop-cms)
 
-## What
+## What?
 
 Build your own Node.js project
 
@@ -12,26 +14,41 @@ Today you'll be building your very own platform to write blog posts. You will be
 
 This is often referred to as a **content management system** (CMS).
 
-## How
+This is a very basic tutorial to get you started with Node.js.  At the end of the tutorial, there are optional stretch goals to introduce more advanced concepts.
 
-At the start of each step, you will need to 'checkout' to a new branch on Git.  
-At the top of your instructions you'll see something like this:
+
+## Why?
+
+We believe in learning by doing!
+
+## How?
+
+### Structure of the workshop
+
+You will be working on this project with your team.  Your mentor will be with you to help you out and answer any questions.
+
+**First, fork this repository onto your own machine**
+
+The project has been split into steps.  There are written instructions for each step in this README.  On your computer, you should checkout out to the relevant branch.  If you run `git branch` you will see there is a branch per step.
+
+
+At the start of each step, you will need to 'checkout' to the next branch on Git.  
+You will be reminded to do this at the start of each step, like so:
 
 ```bash
 git checkout [name of a particular branch]
 git merge [name of previous branch]
 ```
 
-Make sure to checkout to the relevant branch before continuing.
-
 You will see code snippets throughout the walkthrough.  Try to resist the urge to copy and paste - you will learn **much** more if you get into the habit of typing things out.
 
 You might want to test out small bits of code and run them before adding it to your project.  For this, you can use [repl.it](https://repl.it/) if you like.
 
+Throughout each step, we have **bolded** any jargon that you may or may not be familiar with.  At the bottom, you'll find a *keywords* section with links to our cheatsheet.  There's is also a link to the cheatsheet under Useful links at the end of this README.
 
 Your mentor is there to help you.  Don't let them die of boredom - talk to them and ask questions!
 
-
+---
 ## Walkthrough
 * [Step 1 - set up your project](step1.md)
 * [Step 2 - building the server](step2.md)
@@ -45,5 +62,9 @@ Your mentor is there to help you.  Don't let them die of boredom - talk to them 
 * [Step 10 - save your blog posts](step10.md)
 * [stretch - stretch goals](stretch.md)
 
-
 **Have fun learning**
+
+
+## Useful links
+* [What is Node?](https://github.com/node-girls/what-is-node)
+* [Cheatsheet](https://github.com/node-girls/cheatsheets)

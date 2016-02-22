@@ -57,11 +57,7 @@ Hints:
 response.writeHead(200, {"Content-Type": "text/html"});
 ```
 
-This is perfect if the file we're sending back is an html file.  But if it's any other file, html will need to be replaced by the relevant filetype.  using Javascript's `indexOf()` method might be useful.  More info on that [here]()
-
-* maybe make them write their own file extension detector?  hint === indexOf
-
-* stretch goal: rewrite file extension detector with regex
+This is perfect if the file we're sending back is an html file.  But if it's any other file, html will need to be replaced by the relevant filetype.
 
 ---
 ## Commit your changes

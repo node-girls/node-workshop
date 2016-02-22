@@ -1,9 +1,18 @@
-# Build your own Node.js project!
+![logo](readme-images/logo.png) presents:
 
+# workshop-cms
+
+[![HitCount](https://hitt.herokuapp.com/node-girls/workshop-cms.svg)](https://github.com/node-girls/workshop-cms)
+
+## What
+
+Build your own Node.js project
 
 Today you'll be building your very own platform to write blog posts. You will be able to write blog posts and save them.
 
 This is often referred to as a **content management system** (CMS).
+
+## How
 
 At the start of each step, you will need to 'checkout' to a new branch on Git.  
 At the top of your instructions you'll see something like this:
@@ -35,3 +44,6 @@ Your mentor is there to help you.  Don't let them die of boredom - talk to them 
 * [Step 9 - build the CMS](step9.md)
 * [Step 10 - save your blog posts](step10.md)
 * [stretch - stretch goals](stretch.md)
+
+
+**Have fun learning**

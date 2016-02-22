@@ -100,4 +100,4 @@ git push origin step3
 ---
 ### Keywords:
 * status code
-* writeHead()
+* response.writeHead()

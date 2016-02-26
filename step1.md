@@ -4,7 +4,7 @@
 git checkout step1
 ```
 
-To create your project, you will be installing lots of different things along the way.
+Often when creating a project, you might be installing lots of different things along the way.
 
 If you wish to share your project with others, it would be useful to have a list of the things you installed in one file, so that other people's machines know what to install, in order to run it.
 

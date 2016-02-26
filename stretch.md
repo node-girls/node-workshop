@@ -48,3 +48,4 @@ Heroku is good because they have a lot of free options for small-scale apps, lik
 There's great resources out there for continuing your Node.js journey.  Here they are:
 
 * [NodeSchool](nodeschool.io) have really great interactive tutorials for all sorts of Node technologies.
+* [Error Handling](http://thenodeway.io/posts/understanding-error-first-callbacks/)

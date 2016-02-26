@@ -83,7 +83,9 @@ function handler (request, response) {
 }
 ```
 
-**__dirname** is a Node global object that gives you a path to current working directory. We can use this instead of writing th whole path. 
+
+`__dirname` is a Node global object that gives you a path to current working directory. We can use this instead of writing the whole path. 
+
 ---
 ## Commit your changes
 

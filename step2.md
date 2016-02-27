@@ -10,7 +10,7 @@ git merge step1
 
 ### ...and what is a server in plain English?
 
-* A server is a computer program.  It's job is to send and receive data.
+* A server is a computer program.  Its job is to send and receive data.
 
 * Let's take a website for example.  A website is just a collection of HTML and CSS files, images, maybe some javascript files.
 

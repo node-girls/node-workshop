@@ -52,13 +52,13 @@ You might want to test out small bits of code and run them before adding it to y
 
 Throughout each step, we have **bolded** any jargon that you may or may not be familiar with.  At the bottom, you'll find a *keywords* section, some of them with links to further explanations.  
 
-There's is also a link to the general Node Girls cheatsheet under Useful links at the end of this README.
+There is also a link to the general Node Girls cheatsheet under Useful links at the end of this README.
 
 Your mentor is there to help you.  Don't let them die of boredom - talk to them and ask questions!
 
 ### Pair programming!
 
-We think learning together is really important.  We'd like you to do this workshop in **pairs**.  It's a really effecive way to code that is held in high regard by many in the programming world.
+We think learning together is really important.  We'd like you to do this workshop in **pairs**.  It's a really effective way to code that is held in high regard by many in the programming world.
 
 One of you can fork this repository and you can take it in turns to 'drive' (i.e. type).
 
@@ -73,7 +73,7 @@ Don't worry, you can both get a copy of your work if the other person forks thei
 * [Step 5 - serving your assets](step5.md)
 * [Step 6 - sending your blog post to your server](step6.md)
 * [Step 7 - reorganising your project](step7.md)
-* [Step 8 - get ready for the cms project](step8.md)
+* [Step 8 - get ready for the CMS project](step8.md)
 * [Step 9 - build the CMS](step9.md)
 * [Step 10 - save your blog posts](step10.md)
 * [stretch - stretch goals](stretch.md)

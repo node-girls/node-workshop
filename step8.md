@@ -1,4 +1,4 @@
-# Step 8 - Get ready for the cms project
+# Step 8 - Get ready for the CMS project
 
 ```bash
 git checkout step8

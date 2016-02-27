@@ -4,8 +4,6 @@
 
 # Node.js CMS workshop
 
-[![Join the chat at https://gitter.im/node-girls/workshop-cms](https://badges.gitter.im/node-girls/workshop-cms.svg)](https://gitter.im/node-girls/workshop-cms?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 [![HitCount](https://hitt.herokuapp.com/node-girls/workshop-cms.svg)](https://github.com/node-girls/workshop-cms)
 
 ## What?
@@ -43,13 +41,25 @@ git checkout [name of a particular branch]
 git merge [name of previous branch]
 ```
 
+### Keywords and jargon
+
 You will see code snippets throughout the walkthrough.  Try to resist the urge to copy and paste - you will learn **much** more if you get into the habit of typing things out.
 
 You might want to test out small bits of code and run them before adding it to your project.  For this, you can use [repl.it](https://repl.it/) if you like.
 
-Throughout each step, we have **bolded** any jargon that you may or may not be familiar with.  At the bottom, you'll find a *keywords* section with links to our cheatsheet.  There's is also a link to the cheatsheet under Useful links at the end of this README.
+Throughout each step, we have **bolded** any jargon that you may or may not be familiar with.  At the bottom, you'll find a *keywords* section, some of them with links to further explanations.  
+
+There's is also a link to the general Node Girls cheatsheet under Useful links at the end of this README.
 
 Your mentor is there to help you.  Don't let them die of boredom - talk to them and ask questions!
+
+### Pair programming!
+
+We think learning together is really important.  We'd like you to do this workshop in **pairs**.  It's a really effecive way to code that is held in high regard by many in the programming world.
+
+One of you can fork this repository and you can take it in turns to 'drive' (i.e. type).
+
+Don't worry, you can both get a copy of your work if the other person forks their partner's version too :smile:
 
 ---
 ## Walkthrough

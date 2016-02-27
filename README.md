@@ -4,6 +4,8 @@
 
 # Node.js CMS workshop
 
+[![Join the chat at https://gitter.im/node-girls/workshop-cms](https://badges.gitter.im/node-girls/workshop-cms.svg)](https://gitter.im/node-girls/workshop-cms?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![HitCount](https://hitt.herokuapp.com/node-girls/workshop-cms.svg)](https://github.com/node-girls/workshop-cms)
 
 ## What?

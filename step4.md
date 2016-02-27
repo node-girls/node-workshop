@@ -68,7 +68,7 @@ var fs = require('fs');
 
 function handler (request, response) {
 
-  if (url.length === "/") {
+  if (url === "/") {
     response.writeHead(200, {"Content-Type": "text/html"});
 
     fs.readFile(__dirname + '/public/index.html', function(error, file) {

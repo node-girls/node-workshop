@@ -1,0 +1,24 @@
+{
+  "name": "workshop-cms",
+  "version": "1.0.0",
+  "description": "learning how to use node.js!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nogainbar/workshop-cms.git"
+  },
+  "keywords": [
+    "node.js",
+    "girl",
+    "workshop"
+  ],
+  "author": "Noga Inbar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nogainbar/workshop-cms/issues"
+  },
+  "homepage": "https://github.com/nogainbar/workshop-cms#readme"
+}

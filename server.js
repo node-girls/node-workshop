@@ -1,13 +1,32 @@
 var http = require('http');
+var fs = require('fs');
 
-var message = 'I am so happy to be doing this workshop!';
+var message = 'reading files';
 
 function handler (request, response) {
-  response.writeHead (200, {"Content-Type" : "text/html"});
-  response.write(message); //response body
-  response.end(); //finish response
+
+  if(endpoint === "/"){
+    response.writeHead (200, {"Content-Type" : "text/html"});
+
+    fs,readFile(__dirname + '/public/index.html', function(error, file){
+      if(error) {
+        console.log(error);
+        return;
+      }
+
+      response.end(file);
+    });
+  }
 
 }
+//   var method = request.method;
+//   console.log(method);
+//   var endpoint = request.url;
+//   console.log(endpoint);
+//   response.write(message); //response body
+//   response.end(); //finish response
+//
+// }
 
 var server = http.createServer(handler);
 

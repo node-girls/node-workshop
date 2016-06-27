@@ -1,0 +1,22 @@
+{
+  "name": "workshop-cms",
+  "version": "1.0.0",
+  "description": "CMS Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradreeder/workshop-cms.git"
+  },
+  "keywords": [
+    "CMS"
+  ],
+  "author": "Bradley Reeder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bradreeder/workshop-cms/issues"
+  },
+  "homepage": "https://github.com/bradreeder/workshop-cms#readme"
+}

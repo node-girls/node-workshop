@@ -29,7 +29,7 @@ function handler (request, response) {
     response.writeHead (200, {'Content-Type': 'text/html'});
     response.end(message2); //response body
   } else {
-    fs.readFile(__dirname + url, function(error, file){
+    fs.readFile(__dirname + '/public/' + url, function(error, file){
       if(error) {
         console.log(error);
         response.end();

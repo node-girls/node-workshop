@@ -8,6 +8,8 @@ var files = [''];
 
 var port = 4000;
 
+//////recieving GET data
+
 function handler (request, response) {
   var url = request.url;
 
@@ -39,9 +41,26 @@ function handler (request, response) {
         response.end(file);
       }
     });
+    
   }
+
 }
 
+//////recieving POST data
+
+// function handler2 (request, response) {
+//   var allTheData = '';
+//   request.on('data', function(chunckOfData){
+//     allTheData = allTheData + chunckOfData;
+//   });
+//
+//   request.on('end', function(){
+//     console.log(allTheData);;
+//     response.end();
+//   });
+// }
+
+// http.createServer(handler).listen(port);
 http.createServer(handler).listen(port);
 
 console.log('im listening! this is port: ' + port);

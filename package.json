@@ -1,0 +1,20 @@
+{
+  "name": "workshop-cms",
+  "version": "1.0.0",
+  "description": "Setting up a cms with node girls",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skibinska/workshop-cms.git"
+  },
+  "author": "Cleo and Ewelina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skibinska/workshop-cms/issues"
+  },
+  "homepage": "https://github.com/skibinska/workshop-cms#readme"
+}

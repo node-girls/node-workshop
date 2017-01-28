@@ -1,9 +1,5 @@
 # Step 1 - Set up your first project
 
-```bash
-git checkout step1
-```
-
 Often when creating a project, you might be installing lots of different things along the way.
 
 If you wish to share your project with others, it would be useful to have a list of the things you installed in one file, so that other people's machines know what to install, in order to run it.
@@ -68,13 +64,11 @@ Great!  You should now see a new file called `package.json`.
 ```bash
 git add .
 git commit -m 'enter relevant message'
-git push origin step1
 ```
 
-## [**next step >>>**](step2.md)
+## [**next step >>>**](step02.md)
 ---
 ## Keywords
-* git checkout
 * [`package.json`](http://browsenpm.org/package.json)
 * npm
 * dependencies

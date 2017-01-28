@@ -1,10 +1,5 @@
 # Step 3 - Communicate with the server
 
-```bash
-git checkout step3
-git merge step2
-```
-
 ### What is a handler function?
 
 When a request reaches the server, we need a way of responding to it. In comes the **handler** function. The handler function is just a function which receives requests and handles them, hence the name.
@@ -13,7 +8,7 @@ The handler function always takes a `request` and `response` object and sends th
 
 ```js
 function handler (request, response) {
-  //dealing with request and sending response
+  // deal with request and sending response
 }
 ```
 
@@ -38,7 +33,7 @@ var server = http.createServer();
 
 server.listen(3000, function () {
 
-    console.log("Server is listening on port 3000.  Ready to accept requests!");
+    console.log("Server is listening on port 3000. Ready to accept requests!");
 });
 
 
@@ -46,10 +41,9 @@ server.listen(3000, function () {
 
 ## 2. Tell your handler function what to do
 
-We want our handler function to send our message in a response. To do that we will use one of the method of `response` object, which is: ```response.write()```. You can find more about `response.write()` [here](https://nodejs.org/dist/latest-v4.x/docs/api/http.html#http_response_write_chunk_encoding_callback)
+We want our handler function to send our message in a response. To do that we will use one of the method of `response` object, which is: ```response.write()```. You can find more about `response.write()` [here](https://nodejs.org/dist/latest-v6.x/docs/api/http.html#http_response_write_chunk_encoding_callback)
 
-Every response has a header, which contains information about the response. We can add information to the header using `response.writeHead()`. The `writeHead` takes
-2 parameters: status code and header object.
+Every response has a header, which contains information about the response. We can add information to the header using `response.writeHead()`. The `writeHead` takes 2 parameters: status code and header object.
 
 **Add these line to the handler function**
 
@@ -93,10 +87,9 @@ If you see your message in the browser, **congratulations** you just sent your f
 ```bash
 git add .
 git commit -m 'enter relevant message'
-git push origin step3
 ```
 
-## [**next step >>>**](step4.md)
+## [**next step >>>**](step04.md)
 ---
 ### Keywords:
 * status code

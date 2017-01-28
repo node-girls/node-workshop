@@ -1,0 +1,147 @@
+/*******************
+* Basic Resets
+********************/
+
+body, html, div, label, p, h1, h2, h3, h4, h5, h6, form, a, input, textarea {
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+	outline: none;
+}
+
+
+body {
+	line-height: 1;
+	font-size: 88%;
+	font-family: 'Open Sans', arial, sans-serif;
+	background: #FAFAFA;
+	color: #585858;
+}
+
+div {
+	width: 100%;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+    padding: 23px 0;
+	margin: 0 15px;
+	color: #FF0040;
+	letter-spacing: 1px;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+main {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*******************
+*  Header
+********************/
+
+
+header {
+	background: #FF0040;
+	background: -webkit-linear-gradient(#F5A9BC, #FF0040);
+	background: -o-linear-gradient(#F5A9BC, #FF0040); 
+	background: -moz-linear-gradient(#F5A9BC, #FF0040);
+	background: linear-gradient(#F5A9BC, #FF0040);
+}
+
+.title {
+	color: white;
+}
+
+.main-logo {
+	float: left;
+	width: 100px;
+	height: auto;
+}
+
+
+/*******************
+*  Enter a New Post
+********************/
+
+.entry-container {
+	margin: 20px 0 50px;
+}
+
+label {
+	width: 100%;
+}
+
+.text-wrapper {
+	width: 80%;
+}
+
+textarea {
+	width: 96%;
+	border-radius: 3px;
+	border: 1px solid #848484;
+	padding: 5px 2%;
+}
+
+button[type="submit"] {
+	background: #A5DF00;
+	background: -webkit-linear-gradient(#93C503, #ABCC4B);
+	background: -o-linear-gradient(#93C503, #ABCC4B);
+	background: -moz-linear-gradient(#93C503, #ABCC4B);
+	background: linear-gradient(#93C503, #ABCC4B);
+	border: none;
+    color: white;
+    padding: 4px 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    float: right;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+/*******************
+*  Posts
+********************/
+
+hr {
+	background: #BDBDBD;
+}
+
+.thumbnail {
+	float: left;
+	width: 50px;
+	height: auto;
+	margin-left: 3px;
+	margin-top: 3px;
+}
+
+.post {
+	width: 100%;
+    border: 1px solid #848484;
+    float: left;
+    margin: 2%;
+    border-radius: 3px;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 3px 3px 3px 0px rgba(50, 50, 50, 0.4);
+    background: white;
+}
+
+.post p {
+	margin: 5px 10px;
+}
+
+@media (min-width: 600px) {
+	 .post {
+		width: 28.9%;
+	}
+}

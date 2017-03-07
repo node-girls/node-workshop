@@ -4,8 +4,6 @@
 
 # Node.js CMS workshop
 
-[![HitCount](https://hitt.herokuapp.com/node-girls/workshop-cms.svg)](https://github.com/node-girls/workshop-cms)
-
 [![Join the chat at https://gitter.im/node-girls/workshop-cms](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/node-girls/workshop-cms?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
@@ -66,15 +64,15 @@ Don't worry, you can both get a copy of your work if the other person forks thei
 
 ---
 ## Walkthrough
-* [Step 1 - set up your project](step1.md)
-* [Step 2 - building the server](step2.md)
-* [Step 3 - communicate with the server](step3.md)
-* [Step 4 - requests/responses](step4.md)
-* [Step 5 - serving your assets](step5.md)
-* [Step 6 - sending your blog post to your server](step6.md)
-* [Step 7 - reorganising your project](step7.md)
-* [Step 8 - get ready for the CMS project](step8.md)
-* [Step 9 - build the CMS](step9.md)
+* [Step 1 - set up your project](step01.md)
+* [Step 2 - building the server](step02.md)
+* [Step 3 - communicate with the server](step03.md)
+* [Step 4 - requests/responses](step04.md)
+* [Step 5 - serving your assets](step05.md)
+* [Step 6 - sending your blog post to your server](step06.md)
+* [Step 7 - reorganising your project](step07.md)
+* [Step 8 - get ready for the CMS project](step08.md)
+* [Step 9 - build the CMS](step09.md)
 * [Step 10 - save your blog posts](step10.md)
 * [stretch - stretch goals](stretch.md)
 

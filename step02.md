@@ -1,10 +1,5 @@
 # Step 2 - Building the server
 
-```bash
-git checkout step2
-git merge step1
-```
-
 ### What is a server?
 * Servers are computer programs that receive requests from other programs, the *clients* and send back a response e.g share data, information or hardware and software resources.
 
@@ -38,19 +33,19 @@ Examples of common core modules are `http`, `fs` and `path`.
 There is a list of all the core modules and their methods on the [Node.js website](https://nodejs.org/dist/latest-v4.x/docs/api/).
 
 #### b. Node 3rd-party module
-There are thousands of open-source, 3rd-party Node modules that other clever people have written. You can download useful 3rd-party modules (also known as "packages") from the [Node Package Manager](http://npmjs.com).
+There are thousands of open-source, 3rd-party Node modules that other clever people have written. You can download useful 3rd-party modules (also known as "packages") from [npm](http://npmjs.com) (the node package manager).
 
-The NPM website says:
+The npm website says:
 
 > npm makes it easy for JavaScript developers to share and reuse code, and it makes it easy to update the code that you're sharing.
 
-The npm command-line tool comes automatically with Node.  You can install 3rd-party packages on the command line, so no need to download from the npm website or anything.
+The npm command-line tool comes automatically with Node. You can install 3rd-party packages on the command line, so no need to download from the npm website or anything.
 
 #### c. Modules you've written
 
 Also called a module, but slightly different from the first two.
 
-These are modules you write yourself in your code.  We will talk about this later on in step 7.
+These are modules you write yourself in your code. We will talk about this later on in step 7.
 
 ### Time to code!!!
 ---
@@ -59,9 +54,9 @@ These are modules you write yourself in your code.  We will talk about this late
 
 For our server, we are going to use a core Node module called `http`.
 
-`http` is a useful core module - it helps us process our server requests and responses. Just like other modules, `http` is a big javascript object containing properties and methods (functions) that we can use.
+`http` is a useful core module - it helps us process our server requests and responses. Just like other modules, `http` is a big JavaScript object containing properties and methods (functions) that we can use.
 
-The official reference to the `http` module can be found on the Node.js website [here](https://nodejs.org/dist/latest-v4.x/docs/api/http.html).
+The official reference to the `http` module can be found on the Node.js website [here](https://nodejs.org/dist/latest-v6.x/docs/api/http.html).
 
 
 
@@ -118,7 +113,7 @@ If you see this...
 ![success](readme-images/step2-server02.png)
 
 
-### congratulations!
+### Congratulations!
 You have built yourself a server!
 ---
 ## Commit your changes
@@ -126,10 +121,9 @@ You have built yourself a server!
 ```bash
 git add .
 git commit -m 'enter relevant message'
-git push origin step2
 ```
 
-## [**next step** >>>](step3.md)
+## [**next step** >>>](step03.md)
 ---
 ## Keywords
 * server

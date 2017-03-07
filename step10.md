@@ -1,31 +1,28 @@
 # Step 10 - Save your blog posts
 
-```bash
-git checkout step10
-git merge step9
- ```
----
+## Working with the last few files
 
-## Some new files...
+We've included a front end JavaScript file in the public folder called `script.js`. We need to include this in the `index.html` so paste this line just before the `</body>` tag:
+```html
+  <script src="./script.js" type="text/javascript"></script>
+```
 
-There's a new file in the public folder, `script.js`.  Don't worry about what all the code means, just know that it's responsible for sending a request to `GET` old blog posts and display them on the page underneath "Recent Posts".  
+You'll note that in the `src` folder there's a file called `posts.json`.
 
-You'll note that in the `src` folder there's a new file called `posts.json`.  
+JSON is a type of file for structuring data in a readable way. It is also a really popular format for sending data across the web.
 
-JSON is a type of file for structuring data in a readable way.  It is also a really popular format for sending data across the web.
+JSON is a string representation of a JavaScript object. JSON objects convert really easily to Javascript objects, and vice versa, with `JSON.parse()` and `JSON.stringify()`.
 
-JSON is a string representation of a Javascript object.  JSON objects convert really easily to Javascript objects, and vice versa, with `JSON.parse()` and `JSON.stringify()`.  
+(If you're not sure about JavaScript objects, have a chat with your mentor and your team.)
 
-(If you're not sure about Javascript objects, have a chat with your mentor and your team.)
-
-If you look at `posts.json` will see there's already one blog post there.  The format is:
+If you look at `posts.json` will see there's already one blog post there. The format is:
 ```js
 {
     [timestamp]: [blog post message]
 }
 ```
 
-We've used a timestamp as the key so that the blog posts are listed in chronological order.  Also, it's a record of when the blog post was created.  
+We've used a timestamp as the key so that the blog posts are listed in chronological order. Also, it's a record of when the blog post was created.
 
 
 **Your job is now to:**
@@ -42,10 +39,10 @@ You can do these tasks in any order, but it might be easier to:
 
 ## Loading existing blog posts
 
-`script.js` is trying to load existing posts by making a `GET` request.  Look inside `script.js` and see if you can find any useful endpoints.  `fs.readFile()` might be useful here.
+`script.js` is trying to load existing posts by making a `GET` request. Look inside `script.js` and see if you can find any useful endpoints. `fs.readFile()` might be useful here.
 
 
-The code in `script.js` is expecting to receive a JSON object.  Remember your http headers!
+The code in `script.js` is expecting to receive a JSON object. Remember your http headers!
 
 ## Saving data to a file
 
@@ -64,15 +61,22 @@ fs.writeFile('path/to/file', yourData, (error) {
 
 ### Things to remember
 
-* You'll want to make sure your blog posts are also added with a timestamp.  You can get the current unix timestamp using `Date.now()`.
+* You'll want to make sure your blog posts are also added with a timestamp. You can get the current unix timestamp using `Date.now()`.
 
-* `fs.writeFile()` automatically overwrites the whole file.  Chances are you don't want to lose all your old blog posts, so think about how you can combine `fs.readFile()` and `fs.writeFile()` to prevent overwriting.
+* `fs.writeFile()` automatically overwrites the whole file. Chances are you don't want to lose all your old blog posts, so think about how you can combine `fs.readFile()` and `fs.writeFile()` to prevent overwriting.
 
-* You will need to convert between JSON and a javascript object several times.  `JSON.parse()` and `JSON.stringify()` are what you need.
+* You will need to convert between JSON and a javascript object several times. `JSON.parse()` and `JSON.stringify()` are what you need.
 
 ---
 
 If all goes well, you should have a fully functional CMS!
+
+Lastly, you can commit your final changes and push to github:
+```bash
+git add .
+git commit -m 'enter relevant message'
+git push origin master
+```
 
 
 🎉CONGRATULATIONS!!🎉
@@ -86,5 +90,5 @@ Want more?  Then head over to...
 ## Keywords
 * [JSON](http://www.w3schools.com/js/js_json.asp)
 * [timestamp](http://www.w3schools.com/jsref/jsref_now.asp)
-* [fs.readFile](https://nodejs.org/docs/latest-v0.12.x/api/fs.html#fs_fs_readfile_filename_options_callback)
-* [fs.writeFile](https://nodejs.org/docs/latest-v0.12.x/api/fs.html#fs_fs_readfile_filename_options_callback)
+* [fs.readFile](https://nodejs.org/docs/latest-v6.x/api/fs.html#fs_fs_readfile_filename_options_callback)
+* [fs.writeFile](https://nodejs.org/docs/latest-v6.x/api/fs.html#fs_fs_readfile_filename_options_callback)

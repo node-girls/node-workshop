@@ -1,13 +1,8 @@
 # Step 4 - Request/responses
 
-```bash
-git checkout step4
-git merge step3
-```
-
 At the moment our server only does one thing. When it receives any requests, it sends back the same response - your message.
 
-**If you don't believe try typing localhost:3000/chocolate and see what happens**
+**If you don't believe it, try typing localhost:3000/chocolate and see what happens**
 
 We can make the server send different responses depending on the request it receives.
 
@@ -15,7 +10,7 @@ We can make the server send different responses depending on the request it rece
 
 An endpoint is the part of the url which comes after  `/`, in above case it's `/chocolate`.
 
-There is a particular method on request object which allows you to see the endpoint, which was put in the url.
+There is a particular method on the request object that allows you to see the endpoint, which was put in the url.
 
 **Inside your handler function, at the top, add the following:**
 
@@ -53,7 +48,7 @@ You will see that we have a `public` folder with `index.html` and an image.
 To be able to send any file from the server we need a core node module called `fs` - **file system.** 
 `Fs` allows you to **read and write** to and from your hard drive. Before we can send our `index.html`, our server first needs to read it.
 
-One of the `fs` methods is `fs.readFile('path to the file', callback);`. You can read more about `fs` [here](https://nodejs.org/dist/latest-v4.x/docs/api/fs.html#fs_fs_readfile_file_options_callback).
+One of the `fs` methods is `fs.readFile('path to the file', callback);`. You can read more about `fs` [here](https://nodejs.org/dist/latest-v6.x/docs/api/fs.html#fs_fs_readfile_file_options_callback).
 
 
 Let's try it.
@@ -92,10 +87,9 @@ function handler (request, response) {
 ```bash
 git add .
 git commit -m 'enter relevant message'
-git push origin step4
 ```
 
-## [**next step >>>**](step5.md)
+## [**next step >>>**](step05.md)
 
 ---
 ### Keywords:

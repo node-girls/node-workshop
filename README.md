@@ -4,8 +4,6 @@
 
 # Node.js CMS workshop
 
-[![HitCount](https://hitt.herokuapp.com/node-girls/workshop-cms.svg)](https://github.com/node-girls/workshop-cms)
-
 [![Join the chat at https://gitter.im/node-girls/workshop-cms](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/node-girls/workshop-cms?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
@@ -30,19 +28,11 @@ We believe in learning by doing!
 
 You will be working on this project with your team.  Your mentor will be with you to help you out and answer any questions.
 
-**First, fork this repository onto your own machine**
+**First, fork this repository and clone onto your own machine**
 
 The project has been split into steps, which are documented in separate files here on the master branch.  
-If you run `git branch` on your machine, you will see there is a branch per step.  Write all your code in the relevant git branch for your step.
 
-
-At the start of each step, you will need to `checkout` to the next branch on Git.  
-You will be reminded to do this at the start of each step, like so:
-
-```bash
-git checkout [name of a particular branch]
-git merge [name of previous branch]
-```
+Each step builds progressively on top of the previous step. Just follow the instructions and commit the changes as prompted at the end of each step. Have fun!
 
 ### Keywords and jargon
 

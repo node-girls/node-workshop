@@ -1,6 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const querystring = require('querystring');
 
 const handler = (req, res) =>{
   var endpoint = req.url;
@@ -38,6 +39,30 @@ const handler = (req, res) =>{
       }
       res.end(file);
     })
+  }
+  else if (endpoint === "/create-post") {
+    var allTheData = '';
+    req.on('data', (chunkOfData) => {
+      allTheData += chunkOfData;
+    })
+    req.on('end', () => {
+      var convertedData = querystring.parse(allTheData);
+      console.log(convertedData);
+      res.end();
+    })
+    res.writeHead(302, {'Location': '/'});
+    res.end();
+
+
+    // res.writeHead(200, {'Content-Type': 'text/css'})
+    // var filePath = path.join(__dirname, '..', 'public', endpoint);
+    // fs.readFile(filePath, (err, file) => {
+    //   if (err) {
+    //     console.log(err);
+    //     return;
+    //   }
+    //   res.end(file);
+    // })
   }
   // if(endpoint === '/node'){
   //   res.writeHead(200,{'Content-Type':'text/html'});

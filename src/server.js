@@ -6,13 +6,33 @@ const handler = (req, res) =>{
   var endpoint = req.url;
   console.log(endpoint);
   var method = req.method;
-  console.log(method);
   if(endpoint === '/'){
     res.writeHead(200, {'Content-Type':'text/html'});
-    console.log(__dirname+'/public/index.html');
-    var fPath = path.join(__dirname, '..', '/public/index.html');
-    fs.readFile(fPath, (err, file)=>{
+    var filePath = path.join(__dirname, '..', '/public/index.html');
+    fs.readFile(filePath, (err, file) => {
       if(err){
+        console.log(err);
+        return;
+      }
+      res.end(file);
+    })
+  }
+  else if (endpoint === "/img/image.jpg") {
+    res.writeHead(200, {'Content-Type': 'image/jpg'})
+    var filePath = path.join(__dirname, '..', 'public', endpoint);
+    fs.readFile(filePath, (err, file) => {
+      if (err) {
+        console.log(err);
+        return;
+      }
+      res.end(file);
+    })
+  }
+  else if (endpoint === "/main.css") {
+    res.writeHead(200, {'Content-Type': 'text/css'})
+    var filePath = path.join(__dirname, '..', 'public', endpoint);
+    fs.readFile(filePath, (err, file) => {
+      if (err) {
         console.log(err);
         return;
       }
@@ -33,7 +53,6 @@ else{
   res.writeHead(200,{'Content-Type':'text/html'});
   res.write(message);
   res.end();
-
 }
 
 }

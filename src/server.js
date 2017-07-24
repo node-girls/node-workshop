@@ -52,28 +52,7 @@ const handler = (req, res) =>{
     })
     res.writeHead(302, {'Location': '/'});
     res.end();
-
-
-    // res.writeHead(200, {'Content-Type': 'text/css'})
-    // var filePath = path.join(__dirname, '..', 'public', endpoint);
-    // fs.readFile(filePath, (err, file) => {
-    //   if (err) {
-    //     console.log(err);
-    //     return;
-    //   }
-    //   res.end(file);
-    // })
   }
-  // if(endpoint === '/node'){
-  //   res.writeHead(200,{'Content-Type':'text/html'});
-  //   res.write('node');
-  //   res.end();
-  // }
-  // else if (endpoint === '/girls'){
-  //   res.writeHead(200,{'Content-Type':'text/html'});
-  //   res.write('girls');
-  //   res.end();
-  // }
 else{
   res.writeHead(200,{'Content-Type':'text/html'});
   res.write(message);

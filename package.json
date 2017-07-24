@@ -1,0 +1,23 @@
+{
+  "name": "workshop-cms",
+  "version": "1.0.0",
+  "description": "<img src=\"readme-images/logo.png\" alt=\"node-girls-logo\" styles=\"text-align:center;\" />",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devstart": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewdking/workshop-cms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthewdking/workshop-cms/issues"
+  },
+  "homepage": "https://github.com/matthewdking/workshop-cms#readme",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

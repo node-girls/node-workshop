@@ -1,27 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Node Girls CMS tutorial</title>
-        <link rel="stylesheet" href="public/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My first Node.js blog!</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
+        <link href="public/main.css" rel="stylesheet">
     </head>
     <body>
-        <h1> This is the index page </h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <header>
+            <img class="main-logo" src="public/img/logo1.png">
+            <h1 class="title">Node Girls</h1>
+        </header>
+        <main>
+            <div class="entry-container">
+                <form class="" action="/create-post" method="post" id="the-form">
+                    <h2>Write a Blog Post</h2>
+                    <textarea name="post" rows="8" cols="40"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
 
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <img src="public/img/image.jpg">
+            <br/>
+            <hr/>
+            <br/>
 
-        <h3>Create a blog post</h3>
-        <form action="/create-post" method="POST">
-            <textarea name="blogpost" rows="10" cols="14">
+            <h2>Recent Posts</h2>
 
-            </textarea>
-            <button type="submit">Send</button>
-        </form>
+            <div class="post-container"></div>
+        </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     </body>
 </html>

@@ -47,8 +47,10 @@ function createPost(req , res) {
 
   req.on('end', function () {
     var convertedData = querystring.parse(allTheData);
-    console.log(convertedData);
-      res.end();
+    res.writeHead(302, {
+      'Location': '/'
+    });
+    res.end();
   });
 }
 

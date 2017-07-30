@@ -11,6 +11,8 @@ function router(req , res) {
   } else if (url === '/girls') {
 
       //...
+  }else if (url === '/posts') {
+    handler.postPosts(req , res);
   }else if (url === '/create-post') {
     handler.createPost(req , res);
   }else if (url.startsWith('/public')) {

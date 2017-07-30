@@ -53,10 +53,20 @@ function createPost(req , res) {
     res.end();
   });
 }
+function postPosts(req ,res) {
+  var url = req.url;
+  fs.readFile(__dirname + '/posts.json' , function(err , data) {
+    if (err) {
+      console.log(err);
+    }else{
+      res.end(data)
+    }
 
-
+  });
+}
 module.exports = {
   mainHandler : mainHandler,
   genericHandler : genericHandler,
-  createPost : createPost
+  createPost : createPost ,
+  postPosts : postPosts
 };

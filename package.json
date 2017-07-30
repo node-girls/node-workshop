@@ -4,7 +4,8 @@
   "description": "<img src=\"readme-images/logo.png\" alt=\"node-girls-logo\" styles=\"text-align:center;\" />",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Walidmash/workshop-cms/issues"
   },
-  "homepage": "https://github.com/Walidmash/workshop-cms#readme"
+  "homepage": "https://github.com/Walidmash/workshop-cms#readme",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
 }

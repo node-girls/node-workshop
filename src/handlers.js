@@ -47,10 +47,26 @@ function createPost(req , res) {
 
   req.on('end', function () {
     var convertedData = querystring.parse(allTheData);
-    res.writeHead(302, {
-      'Location': '/'
+    fs.readFile(__dirname + '/posts.json' , function(err2 , data2) {
+      if (err2) {
+        console.log(err2);
+      }else {
+        var d = new Date();
+        var myJSON = JSON.parse(data2);
+        myJSON[d.getTime()] = convertedData.post;
+        fs.writeFile(__dirname + '/posts.json', JSON.stringify(myJSON), function(err) {
+          if (err) {
+            console.log(err);
+          }else {
+            res.writeHead(302, {
+              'Location': '/'
+            });
+            res.end();
+          }
+        })
+      }
     });
-    res.end();
+
   });
 }
 function postPosts(req ,res) {

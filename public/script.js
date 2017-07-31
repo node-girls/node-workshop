@@ -10,7 +10,7 @@ $(document).ready(function() {
                 var thumbnail       = document.createElement('img');
                 var postContainer   = document.getElementsByClassName('post-container')[0];
 
-                thumbnail.src = "./img/logo2.png";
+                thumbnail.src = "public/img/logo2.png";
                 thumbnail.className = "thumbnail";
                 postText.innerHTML = data[blogPost];
                 postDiv.className = "post";
@@ -18,7 +18,7 @@ $(document).ready(function() {
                 postDiv.appendChild(thumbnail);
                 postDiv.appendChild(postText);
                 postContainer.appendChild(postDiv);
-                
+
             }
         },
         error: function(error){

@@ -1,11 +1,6 @@
 <img src="readme-images/logo.png" alt="node-girls-logo" styles="text-align:center;" />
 
-<h2 styles="text-align:center;">presents...</h2>
-
-# Node.js CMS workshop
-
-[![Join the chat at https://gitter.im/node-girls/workshop-cms](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/node-girls/workshop-cms?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
+# Node Workshop
 
 ## What?
 
@@ -15,8 +10,7 @@ Today you'll be building your very own platform to write blog posts. You will be
 
 This is often referred to as a **content management system** (CMS).
 
-This is a very basic tutorial to get you started with Node.js.  At the end of the tutorial, there are optional stretch goals to introduce more advanced concepts.
-
+This is a tutorial to get you started with Node.js.  At the end of the tutorial, there are optional stretch goals to introduce more advanced concepts.
 
 ## Why?
 
@@ -24,42 +18,36 @@ We believe in learning by doing!
 
 ## How?
 
-### Structure of the workshop
+### Workshop Structure
 
-You will be working on this project with your team.  Your mentor will be with you to help you out and answer any questions.
+This workshop is divided into a number of steps. At the end of each segment, you should find a link to continue onto the next step.
 
-**First, fork this repository and clone onto your own machine**
+You will see code snippets throughout the walkthrough. Try to resist the urge to copy and paste - you will learn much more if you get into the habit of typing things out. If you want to test out small bits of code before adding them to your project, [repl.it](repl.it) is a useful tool.
 
-The project has been split into steps, which are documented in separate files here on the master branch.  
+The steps start off introducing you to how Node works.  In the last two steps, there are some mini challenges, requiring some problem-solving.  But you'll definitely have all the knowledge you need to complete it!
 
-Each step builds progressively on top of the previous step. Just follow the instructions and commit the changes as prompted at the end of each step. Have fun!
+Feel free to chat to a mentor, or collaborate with your neighbour whenever you need.
 
-### Keywords and jargon
+## Before you Start
 
-You will see code snippets throughout the walkthrough.  Try to resist the urge to copy and paste - you will learn **much** more if you get into the habit of typing things out.
+#### 1. Install Node
 
-You might want to test out small bits of code and run them before adding it to your project.  For this, you can use [repl.it](https://repl.it/) if you like.
+You will need Node.js installed. Download it from the Node.js website [here](https://nodejs.org/en/).
 
-Throughout each step, we have **bolded** any jargon that you may or may not be familiar with.  At the bottom, you'll find a *keywords* section, some of them with links to further explanations.  
+#### 2. Fork and clone this repository
 
-There is also a link to the general Node Girls cheatsheet under Useful links at the end of this README.
+Fork this repository to your own GitHub account.  Instructions for doing this can be found [here](https://help.github.com/articles/fork-a-repo/).
 
-Your mentor is there to help you.  Don't let them die of boredom - talk to them and ask questions!
+Then, clone your forked version of the repository to your desktop in the terminal. Instructions for doing this can be found [here](https://help.github.com/articles/cloning-a-repository/), or run the command below.
 
-### Pair programming!
-
-We think learning together is really important.  We'd like you to do this workshop in **pairs**.  It's a really effective way to code that is held in high regard by many in the programming world.
-
-One of you can fork this repository and you can take it in turns to 'drive' (i.e. type).
-
-Don't worry, you can both get a copy of your work if the other person forks their partner's version too :smile:
+`$ git clone https://github.com/YOUR-USERNAME/node-workshop`
 
 ---
 ## Walkthrough
-* [Step 1 - set up your project](step01.md)
+* [Step 1 - setting up your project](step01.md)
 * [Step 2 - building the server](step02.md)
 * [Step 3 - communicate with the server](step03.md)
-* [Step 4 - requests/responses](step04.md)
+* [Step 4 - requests and responses](step04.md)
 * [Step 5 - serving your assets](step05.md)
 * [Step 6 - sending your blog post to your server](step06.md)
 * [Step 7 - reorganising your project](step07.md)
@@ -70,7 +58,10 @@ Don't worry, you can both get a copy of your work if the other person forks thei
 
 **Have fun learning**
 
+### [Go to Step 1 >>>>](https://github.com/node-girls/express-workshop/blob/master/step01.md)
 
-## Useful links
+## Useful Links
+
 * [What is Node?](https://github.com/node-girls/what-is-node)
-* [Cheatsheet](https://github.com/node-girls/cheatsheets)
+* [Node cheatsheet](https://github.com/node-girls/cheatsheets/blob/master/node-cheatsheet.md)
+* [Command line cheatsheet](https://github.com/node-girls/cheatsheets/blob/master/command-line-cheatsheet.md)

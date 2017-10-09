@@ -1,21 +1,21 @@
-# Step 4 - Request/responses
+# Step 4 - Requests and responses
 
 At the moment our server only does one thing. When it receives any requests, it sends back the same response - your message.
 
 **If you don't believe it, try typing localhost:3000/chocolate and see what happens**
 
-We can make the server send different responses depending on the request it receives.
+However by making use of endpoints, we can make the server send different responses for different requests. This concept is called routing.
 
 ### What is an endpoint?
 
-An endpoint is the part of the url which comes after  `/`, in above case it's `/chocolate`.
+An endpoint is the part of the url which comes after  `/`, in above case it's `/chocolate`.  It's the URL to which you send a request.
 
-There is a particular method on the request object that allows you to see the endpoint, which was put in the url.
+There is a particular method on the `request` object that allows you to see the endpoint, which was put in the url: `request.url`.
 
-**Inside your handler function, at the top, add the following:**
+Inside your handler function, at the top, add the following:
 
 ```js
-var endpoint = request.url;
+const endpoint = request.url;
 console.log(endpoint);
 
 ```
@@ -28,7 +28,7 @@ All requests use one of the HTTP methods. The main ones are: `GET, POST, PUT, DE
 **Type inside your handler function at the top :**
 
 ```js
-var method = request.method;
+const method = request.method;
 console.log(method);
 
 ```
@@ -45,7 +45,7 @@ Now you know how to send the message. How do you send a whole html page?
 
 You will see that we have a `public` folder with `index.html` and an image.
 
-To be able to send any file from the server we need a core node module called `fs` - **file system.** 
+To be able to send any file from the server we need a core node module called `fs` - **file system.**
 `Fs` allows you to **read and write** to and from your hard drive. Before we can send our `index.html`, our server first needs to read it.
 
 One of the `fs` methods is `fs.readFile('path to the file', callback);`. You can read more about `fs` [here](https://nodejs.org/dist/latest-v6.x/docs/api/fs.html#fs_fs_readfile_file_options_callback).
@@ -79,7 +79,7 @@ function handler (request, response) {
 ```
 
 
-`__dirname` is a Node global object that gives you a path to current working directory. We can use this instead of writing the whole path. 
+`__dirname` is a Node global object that gives you a path to current working directory. We can use this instead of writing the whole path.
 
 ---
 ## Commit your changes

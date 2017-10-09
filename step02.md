@@ -1,84 +1,50 @@
 # Step 2 - Building the server
+The first thing we need to do is build our server. You will always need to build a server when writing back-end code.
 
 ### What is a server?
 * Servers are computer programs that receive requests from other programs, the *clients* and send back a response e.g share data, information or hardware and software resources.
 
 ### ...and what is a server in plain English?
 
-* A server is a computer program.  Its job is to send and receive data.
+A server is a computer program.  Its job is to send and receive data.
 
-* Let's take a website for example.  A website is just a collection of HTML and CSS files, images, maybe some javascript files.
-
-* When you type a website address in your browser's address bar, the browser (client) sends a **request** to the server that lives at that address.
-
-* The browser asks the server to give it the files it needs to display the website properly.
+Let's take a website for example.  A website is just a collection of HTML and CSS files, images, maybe some javascript files. When you type a website address in your browser's address bar, the browser (client) sends a **request** to the server that lives at that address.  The browser asks the server to give it the files it needs to display the website properly.
 
 
 ![Server flow](https://files.gitter.im/heron2014/FiiK/server.png)
 
-
-## 1. Understanding 'modules'
-
-### What's a module?
-Modules are just small programs you can integrate with the bigger program you are writing.
-
-Modules would be listed in your `package.json`.
-
-There are 3 types of modules.
-
-#### a. Node core module
-'Core' Node modules come with Node automatically.
-Examples of common core modules are `http`, `fs` and `path`.
-
-There is a list of all the core modules and their methods on the [Node.js website](https://nodejs.org/dist/latest-v4.x/docs/api/).
-
-#### b. Node 3rd-party module
-There are thousands of open-source, 3rd-party Node modules that other clever people have written. You can download useful 3rd-party modules (also known as "packages") from [npm](http://npmjs.com) (the node package manager).
-
-The npm website says:
-
-> npm makes it easy for JavaScript developers to share and reuse code, and it makes it easy to update the code that you're sharing.
-
-The npm command-line tool comes automatically with Node. You can install 3rd-party packages on the command line, so no need to download from the npm website or anything.
-
-#### c. Modules you've written
-
-Also called a module, but slightly different from the first two.
-
-These are modules you write yourself in your code. We will talk about this later on in step 7.
-
 ### Time to code!!!
 ---
+
+## 1. Create a `server.js` file
+Let's build our server! Before we do anything, let's create a new file called `server.js`. This is where all our server code is going to live.
 
 ## 2. `require` the `http` core module
 
 For our server, we are going to use a core Node module called `http`.
+If you need to know what a 'module' is, have a look at our cheatsheet here.
 
 `http` is a useful core module - it helps us process our server requests and responses. Just like other modules, `http` is a big JavaScript object containing properties and methods (functions) that we can use.
 
-The official reference to the `http` module can be found on the Node.js website [here](https://nodejs.org/dist/latest-v6.x/docs/api/http.html).
+The official reference to the `http` module can be found on the Node.js website. [here](https://nodejs.org/dist/latest-v8.x/docs/api/http.html).
 
 
-
-
-**Create a file called `server.js`**
-
-**Inside `server.js`, write the following:**
+In Node, you access modules in your project by 'requiring' them.  Inside `server.js`, write the following:
 
 ```js
-var http = require('http');
+const http = require('http');
 ```
-In Node, you access modules in your project by 'requiring' them.
+Now you will have access to Node's `http` module.
 
 ## 3. Initialise the server
 
 To build our server, we will use a specific method, `http.createServer`.  
 
-**Add the following line to `server.js`:**
+Add the following line to `server.js`:
 ```js
-var http = require('http');
+const http = require('http');
 
-var server = http.createServer();
+const server = http.createServer();
 
 ```
 
@@ -89,12 +55,11 @@ One more step left, we need to set a **port** for our server to listen to.  Thin
 We use the `server.listen` method to do this.  It will take two arguments, a **port** and a callback function.
 
 ```js
-var http = require('http');
+const http = require('http');
 
-var server = http.createServer();
+const server = http.createServer();
 
 server.listen(3000, function () {
-
     console.log("Server is listening on port 3000.  Ready to accept requests!");
 });
 

@@ -21,7 +21,7 @@ Let's try `POST`ing some text to the server.
 ```
 
 * This form has a text area and a Send button.
-* The `action` attribute is the endpoint form data will be sent to.
+* The `action` attribute is the endpoint where the form data will be sent to.
 * The `name` attribute will be used later to reference the data.
 
 When you hit Send, the form will send a `POST` request to the server, using the `/create-post` endpoint.
@@ -38,7 +38,7 @@ request.on('data', function (chunkOfData) {
 });
 ```
 
-This above code means "when the 'data' starts to arrive, do something".
+The above code means "when the 'data' starts to arrive, do something".
 
 When the data arrives we want to collect it. So let's add this:
 
@@ -51,7 +51,7 @@ request.on('data', function (chunkOfData) {
 ```
 We are gradually collecting the chunks of data in the `allTheData` variable.
 
-When all the data has come through, an `'end'` event is emitted, so we need to listen for `'end'`, like this:
+When all the data has come through, an `'end'` event is emitted, so we need to listen to `'end'` event, like this:
 
 ```js
 var allTheData = '';
@@ -71,11 +71,15 @@ request.on('end', function () {
 
 ### Query strings
 
-If you look in the console, you will probably see something a bit strange. This is because html forms send data over the internet as **query strings**. When we receive the form data in our server, we need to convert it from a query string into an JavaScript object, so that we can use it.
+If you look at the console, you will probably see something a bit strange. This is because html forms send data over the internet as **query strings**. When we receive the form data in our server, we need to convert it from a query string into a JavaScript object, so that we can use it.
 
 Node has a core module called `querystring` that does this conversion for us.
 
-**Require `querystring` at the top of your server.js file**
+**Require `querystring` at the top of your server.js file like that:**
+
+```js
+const querystring = require('querystring');
+```
 
 You will need to use `querystring.parse()` to convert the `allTheData` query string to an object.
 
@@ -108,6 +112,7 @@ response.writeHead(200, {"Content-Type": "text/html"});
 ```
 
 Instead of a "Content-Type" header, this time you will need a **"Location"** response header in your object. The value of the object should be the endpoint you want the page to redirect to.
+For more information about Location [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Location)
 
 You'll also want to use a **different status code from 200**. Look at a list of [status codes here](https://httpstatuses.com/) and have an experiment.
 
@@ -123,7 +128,7 @@ git commit -m 'enter relevant message'
 
 ---
 ### Keywords
-* stream
+* [stream](https://medium.freecodecamp.org/node-js-streams-everything-you-need-to-know-c9141306be93)
 * [`querystring` core module](https://nodejs.org/api/querystring.html)
 * [POST vs GET](http://www.w3schools.com/tags/ref_httpmethods.asp)
-* [html forms]
+* [html forms](https://www.w3schools.com/html/html_forms.asp)

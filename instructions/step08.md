@@ -47,12 +47,5 @@ We need to change the `index.html` file. Replace the current content with:
 </html>
 ```
 
-Now commit your changes:
-
-```bash
-git add .
-git commit -m 'enter relevant message'
-```
-
 
 ## [**Next step >>>**](step09.md)

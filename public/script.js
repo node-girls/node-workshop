@@ -4,11 +4,11 @@ $(document).ready(function() {
         dataType: 'json',
         success: function(data) {
 
-            for (var blogPost in data) {
-                var postDiv         = document.createElement('div');
-                var postText        = document.createElement('p');
-                var thumbnail       = document.createElement('img');
-                var postContainer   = document.getElementsByClassName('post-container')[0];
+            for (const blogPost in data) {
+                const postDiv         = document.createElement('div');
+                const postText        = document.createElement('p');
+                const thumbnail       = document.createElement('img');
+                const postContainer   = document.getElementsByClassName('post-container')[0];
 
                 thumbnail.src = "./img/logo2.png";
                 thumbnail.className = "thumbnail";

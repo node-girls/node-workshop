@@ -4,7 +4,7 @@ So far we have been requesting data from our server. But we can also *send* data
 
 ### The `POST` http request method
 
-When sending data to the server, we use the `POST` http request method, instead of `GET`. To understand the difference, follow the "POST vs GET" link in the keywords section below.
+When sending data to the server, we use the `POST` HTTP request method, instead of `GET`. To understand the difference, follow the "POST vs GET" link in the keywords section at the bottom of the page.
 
 Let's try `POST`ing some text to the server.
 
@@ -43,7 +43,7 @@ This above code means "when the 'data' starts to arrive, do something".
 When the data arrives we want to collect it. So let's add this:
 
 ```js
-var allTheData = '';
+let allTheData = '';
 request.on('data', function (chunkOfData) {
 
     allTheData += chunkOfData;
@@ -54,7 +54,7 @@ We are gradually collecting the chunks of data in the `allTheData` variable.
 When all the data has come through, an `'end'` event is emitted, so we need to listen for `'end'`, like this:
 
 ```js
-var allTheData = '';
+let allTheData = '';
 request.on('data', function (chunkOfData) {
 
     allTheData += chunkOfData;
@@ -84,7 +84,7 @@ You will need to use `querystring.parse()` to convert the `allTheData` query str
 ```js
 request.on('end', function () {
 
-    var convertedData = querystring.parse(allTheData);
+    const convertedData = querystring.parse(allTheData);
     console.log(convertedData);
     response.end();
 });
@@ -112,13 +112,6 @@ Instead of a "Content-Type" header, this time you will need a **"Location"** res
 You'll also want to use a **different status code from 200**. Look at a list of [status codes here](https://httpstatuses.com/) and have an experiment.
 
 ---
-## Commit your changes
-
-```bash
-git add .
-git commit -m 'enter relevant message'
-```
-
 ## [**Next step >>>**](step07.md)
 
 ---

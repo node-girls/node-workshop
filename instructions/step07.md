@@ -34,12 +34,12 @@ In this context, a module is some code you've written in its own JavaScript file
 
 To connect one file with another, we use the same `require()` as with core modules. The only difference is we instead of:
 ```js
-var coreModule = require('nameOfModule');
+const coreModule = require('nameOfModule');
 ```
 
 we do this:
 ```js
-var myModule = require('path/to/my/file');
+const myModule = require('path/to/my/file');
 ```
 
 **Require your handler.js file into your server.js file**
@@ -72,7 +72,7 @@ We can use **relative paths**. `..` means "go up one level to the folder above".
 
 Remember that `__dirname` gives us the current directory. We can combine `__dirname`, the dots and any folder names to point to the correct location.
 
-See if you can do this by yourself. Work with your team if you're struggling.
+See if you can do this by yourself. Chat to a mentor or your neighbour if you need help.
 
 
 ## More modularisation!!!
@@ -80,12 +80,6 @@ See if you can do this by yourself. Work with your team if you're struggling.
 You could split `handler.js` even further, by separating your routes from your handler. We will not do this now.
 
 ---
-## Commit your changes
-
-```bash
-git add .
-git commit -m 'enter relevant message'
-```
 
 ## [**Next step >>>**](step08.md)
 

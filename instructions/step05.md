@@ -5,19 +5,19 @@ So you may or may not have noticed that the index page is slightly broken.
 ![waiting for localhost](readme-images/step5-waiting-for-localhost.png)
 ![broken image](readme-images/step5-broken-image.png)
 
-You may also have noticed that the page is looking kinda plain.  There's no css being loaded in either!
+You may also have noticed that the page is looking kinda plain.  There's no CSS being loaded in either!
 
 ## **script**, **img** and **link** tags send requests too!
 
 As you know, typing a URL into your browser and hitting enter initiates a request to a server somewhere. Once you load in your index page, something interesting happens.
 
-Note the `<link>` and `<img>` tags in the `index.html` page. Here they're looking for a `main.css` file and a `image.jpg` file. In fact, they send their own requests back to the server, asking for those very files.
+Note the `<link>` and `<img>` tags in the `index.html` page. Here they're looking for a `main.css` file and a `img/mage.jpg` file. In fact, those tags send their own requests back to the server, asking for those very files.
 
-So there's actually **three** requests going on here. One is the original browser request, another is a request sent by `<link>`, and the last one is a request sent by `<img>`
+So there's actually **three** requests going on here. One is the original browser request, on the `/` endpoint, another is a request sent by `<link>`, and the last one is a request sent by `<img>`
 
 #### So how do we deal with these two extra requests in our handler?
 
-You *could* write more routes in your handler for the `image.jpg` and `main.css` files in the public folder. But what if you had multiple css files, or multiple images?  Writing routes for *all* of them would get very tedious very quickly!
+You *could* write more routes in your handler for the `image.jpg` and `main.css` files in the public folder. But what if you had multiple CSS files, or multiple images?  Writing routes for *all* of them would get very tedious very quickly!
 
 Luckily, you don't need to write specific routes for everything.  You can write a generic route that is able to deal with lots of different **assets**.
 
@@ -42,25 +42,24 @@ if (endpoint === '/') {
 }
 ```
 
-Hints:
+Here's what you want to achieve:
 
-* You'll want to think about how to tell `fs.readFile` which file you're looking for. For the `/` endpoint we were specific about serving index.html every time. This time we want to be able to serve *any* file that was requested.
-* All your files are in the `public` folder, so make sure to tell `fs.readFile` where to look!
+
+* For our `/` endpoint, we tell `fs.readFile` to read specifically the `index.html` file, by passing it `__dirname + /public/index.html`.  The "/public" part is there because the `index.html` file is in the `public` folder. In the generic endpoint, we won't know in advance which file we need.  How can we write the generic endpoint in a way that work with any file requested?
+
+* All your files are in the `public` folder, so make sure to tell `fs.readFile` where to look!  You can do this by concatenating (combining) the `__dirname` with the string "public", using the `+` sign.  You may need to add an extra forward-slash ("/") to combine them correctly. You can always use `console.log` to look at the result of your `__dirname` combinations.
+
 * When sending back the response, you'll want to alter the information for your header. In the examples so far we have seen:
 
 ```js
 response.writeHead(200, {"Content-Type": "text/html"});
 ```
 
-This is perfect if the file we're sending back is an html file.  But if it's any other file, html will need to be replaced by the relevant filetype.
+This is perfect if the file we're sending back is an html file.  But if it's any other file, "html" will need to be replaced by the relevant filetype.  Think about how you can extract the filetype from the endpoint, and use it to replace the "html" in the header above.
+
+JavaScript's [`split` function](https://www.w3schools.com/jsref/jsref_split.asp) is your friend :)
 
 ---
-## Commit your changes
-
-```bash
-git add .
-git commit -m 'enter relevant message'
-```
 
 ## [**next step >>>**](step06.md)
 ---

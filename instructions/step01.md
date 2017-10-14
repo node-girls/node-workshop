@@ -6,9 +6,9 @@ In Node.js, this 'list' file is called a `package.json`. The 'things you've inst
 
 ## 1. Make a `package.json` file
 
-Let's start by creating the `package.json` file. We can add things to it as the project grows. The `package.json` file is easy to create from the command line. Type the following command into your terminal to get started:
+Let's start by creating the `package.json` file. The `package.json` file is easy to create from the command line. Type the following command into your terminal to get started:
 
-```
+```bash
 $ npm init
 ```
 

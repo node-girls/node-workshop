@@ -41,16 +41,16 @@ server.listen(3000, function () {
 
 ## 2. Tell your handler function what to do
 
-We want our handler function to send our message in a response. To do that we will use one of the method of `response` object, which is: ```response.write()```. You can find more about `response.write()` [here](https://nodejs.org/dist/latest-v8.x/docs/api/http.html#http_response_write_chunk_encoding_callback)
+We want our handler function to send our message in a response. To do that we will use one of the methods on `response` object, which is: ```response.write()```. You can find more about `response.write()` [here](https://nodejs.org/dist/latest-v8.x/docs/api/http.html#http_response_write_chunk_encoding_callback)
 
-Every response has a header, which contains information about the response.  That information is given to the browser, so it can understand what it's receiving. We can add information to the header using `response.writeHead()`. The `writeHead` takes 2 parameters: status code and header object.
+Every response has a header, which contains information about the response.  That header information is given to the browser, so it can understand what it's receiving. We can add information to the header using `response.writeHead()`. The `writeHead` takes 2 parameters: status code and header object.
 
 **Add these line to the handler function**
 
 ```js
 function handler (request, response) {
   response.writeHead(200, {"Content-Type": "text/html"});
-  response.write(message); //response body
+  response.write(message); // response body
   response.end(); // finish response
 }
 
@@ -69,25 +69,14 @@ const server = http.createServer(handler);
 
 ## 4. Rerun your server and go to your favourite browser
 
-**Rerun your server by typing again**
-
-
-```
-node server.js
-```
+You need to restart your server so it reflects the changes you've made.  In your terminal, `ctrl + c`
+ will stop the server.  You can restart it by running `node server.js` again.
 
 **Type in your browser** `localhost:3000`
 
 If you see your message in the browser, **congratulations** you just sent your first response from the server.
 
 ---
-## Commit your changes
-
-```bash
-git add .
-git commit -m 'enter relevant message'
-```
-
 ## [**next step >>>**](step04.md)
 ---
 ### Keywords:

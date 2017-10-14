@@ -54,7 +54,7 @@ You will see a confirmation of your `package.json`. If you're happy with it, pre
 
 Great! You should now see a new file called `package.json` in your project's folder.
 
-### [Go to Step 2 >>>>](https://github.com/node-girls/node-workshop/blob/master/step02.md)
+### [Go to Step 2 >>>>](step02.md)
 
 ## Keywords
 

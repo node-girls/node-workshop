@@ -48,7 +48,7 @@ You should get an error:
 ```bash
 TypeError: listener must be a function
 ```
-![require error](readme-images/step7-require-error.png)
+![require error](https://raw.githubusercontent.com/node-girls/node-workshop/master/readme-images/step7-require-error.png)
 
 This is because we haven't "exported" the code inside `handler.js`. It isn't available to us yet. Let's do that now.
 

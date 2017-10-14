@@ -22,7 +22,7 @@ Here are some links to an example of this in a different project:
 - [routes](https://github.com/node-girls/workshop-2015/blob/example/routes.js)
 - [handler](https://github.com/node-girls/workshop-2015/blob/example/handlers.js)
 
-![routes-handlers](readme-images/stretch-routes-handlers.png)
+![routes-handlers](https://raw.githubusercontent.com/node-girls/node-workshop/master/readme-images/stretch-routes-handlers.png)
 
 
 ### Testing your project

@@ -2,8 +2,8 @@
 
 So you may or may not have noticed that the index page is slightly broken.
 
-![waiting for localhost](readme-images/step5-waiting-for-localhost.png)
-![broken image](readme-images/step5-broken-image.png)
+![waiting for localhost](https://raw.githubusercontent.com/node-girls/node-workshop/master/readme-images/step5-waiting-for-localhost.png)
+![broken image](https://raw.githubusercontent.com/node-girls/node-workshop/master/readme-images/step5-broken-image.png)
 
 You may also have noticed that the page is looking kinda plain.  There's no css being loaded in either!
 

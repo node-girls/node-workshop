@@ -75,7 +75,7 @@ node server.js
 
 If you see this...
 
-![success](readme-images/step2-server02.png)
+![success](https://raw.githubusercontent.com/node-girls/node-workshop/master/readme-images/step2-server02.png)
 
 
 ### Congratulations!

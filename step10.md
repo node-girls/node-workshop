@@ -13,10 +13,10 @@ JSON is a type of file for structuring data in a readable way. It is also a real
 
 JSON is a string representation of a JavaScript object. JSON objects convert really easily to Javascript objects, and vice versa, with `JSON.parse()` and `JSON.stringify()`.
 
-For more details visit links below in the keywords section.
+For more details visit the links below in the keywords section.
 (If you're not sure about JavaScript objects, have a chat with your mentor and your team.)
 
-If you look at `posts.json` file you will see there's already one blog post there. The format is:
+If you look at the `posts.json` file, you will see there's already one blog post there. The format is:
 ```js
 {
     [timestamp]: [blog post message]
@@ -64,13 +64,13 @@ fs.writeFile('path/to/file', yourData, (error) {
 
 * You'll want to make sure that your blog posts are also added with a timestamp. You can get the current unix timestamp using `Date.now()`.
 
-* `fs.writeFile()` automatically overwrites the whole file. Chances are: you don't want to lose all your old blog posts, so think about how you can combine `fs.readFile()` and `fs.writeFile()` to prevent overwriting.
+* `fs.writeFile()` automatically overwrites the whole file. Chances are you don't want to lose all your old blog posts, so think about how you can combine `fs.readFile()` and `fs.writeFile()` to prevent overwriting.
 
 * You will need to convert between JSON and a javascript object several times. `JSON.parse()` and `JSON.stringify()` are what you need.
 
 ---
 
-If all steps goes well, you should have a fully functional CMS!
+If all the steps have gone well, you should have a fully functional CMS!
 
 Lastly, you can commit your final changes and push to github:
 ```bash

@@ -22,15 +22,15 @@ Let's make the code a bit more structured and organised. The best way to do that
 
 **Create a folder called `src` in the root**
 
-* create `handler.js` file in the `src` folder
+* create a `handler.js` file in the `src` folder
 * paste handler function and related dependencies into handler.js
 
 
 ## Making your own modules!
 
-Way back in step 2, we mentioned that there are three types of modules in Node. You are about to make the third type of modules - your own one!
+Way back in step 2, we mentioned that there are three types of modules in Node. You are about to make the third type of module - your own one!
 
-In this context, a module is some code you've written it in its own JavaScript file. You can share this code with other files. This is handy, because it means we can split big, messy files into smaller ones.
+In this context, a module is some code that you've written in its own JavaScript file. You can share this code with other files. This is handy, because it means we can split big, messy files into smaller ones.
 
 To connect one file with another, we use the same `require()` as with core modules. The only difference is we instead of:
 ```js
@@ -66,9 +66,9 @@ Try running the server again and reloading the page.
 
 You should see a very broken webpage now. There's a reason for that!
 
-When the handler function was in `server.js`, the paths to our assets (html, css etc) which saved in the `pathToFile` and `pathToIndex` variables, were correct. Now the handler function has moved inside the `src` folder, we need to update the paths to our assets to make sure they point to the right location.
+When the handler function was in `server.js`, the paths to our assets (html, css etc) that were assigned to the `pathToFile` and `pathToIndex` variables, were correct. Now the handler function has moved inside the `src` folder, we need to update the paths to our assets to make sure they point to the right location.
 
-We can use **relative paths**. `..` means "go up one level to the folder above".  `.` means "look inside the current folder". For example: '../myComputer/home.txt' means "go up one folder, then go to 'myComputer' folder, then go to 'home.txt' file". Another example: './home.txt' means "look inside the current folder for 'home.txt' file"
+We can use **relative paths**. `..` means "go up one level to the folder above".  `.` means "look inside the current folder". For example: '../myComputer/home.txt' means "go up one folder, then go to the 'myComputer' folder, then go to the 'home.txt' file". Another example: './home.txt' means "look inside the current folder for the 'home.txt' file"
 
 Remember that `__dirname` gives us the current directory. We can combine `__dirname`, the dots, and any folder names to point to the correct location.
 

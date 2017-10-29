@@ -21,7 +21,7 @@ Let's try `POST`ing some text to the server.
 ```
 
 * This form has a text area and a Send button.
-* The `action` attribute is the endpoint where the form data will be sent to.
+* The `action` attribute is the endpoint where the form data will be sent.
 * The `name` attribute will be used later to reference the data.
 
 When you hit Send, the form will send a `POST` request to the server, using the `/create-post` endpoint.
@@ -51,7 +51,7 @@ request.on('data', function (chunkOfData) {
 ```
 We are gradually collecting the chunks of data in the `allTheData` variable.
 
-When all the data has come through, an `'end'` event is emitted, so we need to listen to `'end'` event, like this:
+When all the data has come through, an `'end'` event is emitted, so we need to listen for the `'end'` event, like this:
 
 ```js
 var allTheData = '';
@@ -75,10 +75,10 @@ If you look at the console, you will probably see something a bit strange. This 
 
 Node has a core module called `querystring` that does this conversion for us.
 
-**Require `querystring` at the top of your server.js file like that:**
+**Require `querystring` at the top of your server.js file like this:**
 
 ```js
-const querystring = require('querystring');
+var querystring = require('querystring');
 ```
 
 You will need to use `querystring.parse()` to convert the `allTheData` query string to an object.
@@ -112,7 +112,7 @@ response.writeHead(200, {"Content-Type": "text/html"});
 ```
 
 Instead of a "Content-Type" header, this time you will need a **"Location"** response header in your object. The value of the object should be the endpoint you want the page to redirect to.
-For more information about Location [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Location)
+Find more information about Location [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Location)
 
 You'll also want to use a **different status code from 200**. Look at a list of [status codes here](https://httpstatuses.com/) and have an experiment.
 

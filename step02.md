@@ -126,11 +126,11 @@ git commit -m 'enter relevant message'
 ## [**next step** >>>](step03.md)
 ---
 ## Keywords
-* server
-* client
-* request
-* response
-* require
-* module
-* method
-* port
+* ['server'](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server)
+* ['client](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs)
+* ['request'](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
+* ['response'](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
+* ['require'](https://docs.nodejitsu.com/articles/getting-started/what-is-require/)
+* ['module'](https://www.w3schools.com/nodejs/nodejs_modules.asp)
+* ['method'](https://nodejs.org/en/docs/guides/anatomy-of-an-http-transaction/)
+* ['port'](https://computer.howstuffworks.com/web-server8.htm)

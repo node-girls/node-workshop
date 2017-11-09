@@ -4,7 +4,7 @@ Often when creating a project, you might be installing lots of different things 
 
 If you wish to share your project with others, it would be useful to have a list of the things you installed in one file, so that other people's machines know what to install, in order to run it.
 
-This 'list' file is called a `package.json`.  The 'things you've installed' are referred to as **dependencies**
+This 'list' file is called a `package.json`.  The 'things you've installed' are referred to as **npm packages**
 
 ## 1. Make a `package.json` file
 
@@ -69,6 +69,6 @@ git commit -m 'enter relevant message'
 ## [**next step >>>**](step02.md)
 ---
 ## Keywords
-* [`package.json`](http://browsenpm.org/package.json)
-* npm
-* dependencies
+* [`package.json`](https://docs.npmjs.com/getting-started/using-a-package.json)
+* [`npm`](https://docs.npmjs.com/getting-started/what-is-npm)
+* [`npm packages`](https://docs.npmjs.com/getting-started/installing-npm-packages-locally)

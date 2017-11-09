@@ -92,5 +92,5 @@ git commit -m 'enter relevant message'
 ## [**next step >>>**](step04.md)
 ---
 ### Keywords:
-* ['status code'](https://nodejs.org/en/docs/guides/anatomy-of-an-http-transaction/)
+* ['status code'] (https://nodejs.org/en/docs/guides/anatomy-of-an-http-transaction/)
 * ['response.writeHead()'] (https://nodejs.org/api/http.html#http_response_writehead_statuscode_statusmessage_headers)

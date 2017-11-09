@@ -69,6 +69,6 @@ git commit -m 'enter relevant message'
 ## [**next step >>>**](step02.md)
 ---
 ## Keywords
-* [`package.json`](https://docs.npmjs.com/getting-started/using-a-package.json)
+* [`package.json`] (https://docs.npmjs.com/getting-started/using-a-package.json)
 * [`npm`] (https://docs.npmjs.com/getting-started/what-is-npm)
 * [`npm packages`] (https://docs.npmjs.com/getting-started/installing-npm-packages-locally)

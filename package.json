@@ -1,0 +1,19 @@
+{
+  "name": "node-girls",
+  "version": "1.0.0",
+  "description": "Simple blogging platform",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MynahMarie/node-workshop.git"
+  },
+  "author": "MynahMarie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MynahMarie/node-workshop/issues"
+  },
+  "homepage": "https://github.com/MynahMarie/node-workshop#readme"
+}

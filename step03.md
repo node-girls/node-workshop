@@ -45,7 +45,7 @@ We want our handler function to send our message in a response. To do that we wi
 
 Every response has a header, which contains information about the response. We can add information to the header using `response.writeHead()`. The `writeHead` takes 2 parameters: status code and header object.
 
-**Add these line to the handler function**
+**Add these lines to the handler function**
 
 ```js
 function handler (request, response) {
@@ -82,12 +82,6 @@ node server.js
 If you see your message in the browser, **congratulations** you just sent your first response from the server.
 
 ---
-## Commit your changes
-
-```bash
-git add .
-git commit -m 'enter relevant message'
-```
 
 ## [**next step >>>**](step04.md)
 ---

@@ -1,11 +1,4 @@
-<img src="readme-images/logo.png" alt="node-girls-logo" styles="text-align:center;" />
-
-<h2 styles="text-align:center;">presents...</h2>
-
 # Node.js CMS workshop
-
-[![Join the chat at https://gitter.im/node-girls/workshop-cms](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/node-girls/workshop-cms?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 
 ## What?
 
@@ -15,8 +8,7 @@ Today you'll be building your very own platform to write blog posts. You will be
 
 This is often referred to as a **content management system** (CMS).
 
-This is a very basic tutorial to get you started with Node.js.  At the end of the tutorial, there are optional stretch goals to introduce more advanced concepts.
-
+This is an adaptation of a [tutorial](https://github.com/node-girls/node-workshop) created by [Node Girls](http://nodegirls.io). Some of this tutorial will be repetition from this morning's code-a-long or a variation of steps covered in the code-a-long. There are often several ways to accomplish something in coding, so everything here may not be exactly the same - that's good! Feel free to reflect on any differences and ask questions. At the end of the tutorial, there are optional stretch goals to introduce more advanced concepts.
 
 ## Why?
 
@@ -26,13 +18,11 @@ We believe in learning by doing!
 
 ### Structure of the workshop
 
-You will be working on this project with your team.  Your mentor will be with you to help you out and answer any questions.
+You will be working on this project in pairs.  Your mentors will be available to help you out and answer any questions. Remember the 20/20/20 rule if you get stuck!
 
-**First, fork this repository and clone onto your own machine**
+**First, clone this repository onto your own machine**
 
-The project has been split into steps, which are documented in separate files here on the master branch.  
-
-Each step builds progressively on top of the previous step. Just follow the instructions and commit the changes as prompted at the end of each step. Have fun!
+The project has been split into steps, which are documented in separate files here on the master branch. Each step builds progressively on top of the previous step. 
 
 ### Keywords and jargon
 
@@ -44,15 +34,7 @@ Throughout each step, we have **bolded** any jargon that you may or may not be f
 
 There is also a link to the general Node Girls cheatsheet under Useful links at the end of this README.
 
-Your mentor is there to help you.  Don't let them die of boredom - talk to them and ask questions!
-
-### Pair programming!
-
-We think learning together is really important.  We'd like you to do this workshop in **pairs**.  It's a really effective way to code that is held in high regard by many in the programming world.
-
-One of you can fork this repository and you can take it in turns to 'drive' (i.e. type).
-
-Don't worry, you can both get a copy of your work if the other person forks their partner's version too :smile:
+Remember to ask the mentors any questions you have as they arise.
 
 ---
 ## Walkthrough

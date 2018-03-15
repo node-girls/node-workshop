@@ -23,8 +23,7 @@ Luckily, you don't need to write specific routes for everything.  You can write 
 
 So now you're going to add one more route to your handler function, and that route should be able to successfully respond with both the `image.jpg` and `main.css` files, plus any other files that might be in public folder.
 
-**Add a final `else` to your `if-else` block**
-**Finish the code for the generic route**
+**Add a final `else` to your `if-else` block and finish the code for the generic route**
 
 ```js
 if (endpoint === '/') {
@@ -54,13 +53,9 @@ response.writeHead(200, {"Content-Type": "text/html"});
 
 This is perfect if the file we're sending back is an html file.  But if it's any other file, html will need to be replaced by the relevant filetype.
 
----
-## Commit your changes
+Feel free to refer back to the code-a-long for help but don't copy and paste!
 
-```bash
-git add .
-git commit -m 'enter relevant message'
-```
+---
 
 ## [**next step >>>**](step06.md)
 ---

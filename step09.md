@@ -13,11 +13,5 @@ Your job is to write a new server and handler. You'll serve the public assets an
 Good luck! Remember, work with your team and chat with your mentor!
 
 ---
-## Commit your changes
-
-```bash
-git add .
-git commit -m 'enter relevant message'
-```
 
 ## [**Next step >>>**](step10.md)

@@ -82,12 +82,6 @@ function handler (request, response) {
 `__dirname` is a Node global object that gives you a path to current working directory. We can use this instead of writing the whole path. 
 
 ---
-## Commit your changes
-
-```bash
-git add .
-git commit -m 'enter relevant message'
-```
 
 ## [**next step >>>**](step05.md)
 

@@ -16,14 +16,14 @@ Let's make the code a bit more structured and organised. The best way to do that
 * favicon.ico
 
 **src** --> `src` is short for 'source'. This will contain the server-side code that deals with logic
-* handlers.js (we will create this)
+* router.js (we will create this)
 
 `server.js` will remain in the **root**.
 
 **Create a folder called `src` in the root**
 
-* create a `handler.js` file in the `src` folder
-* paste handler function and related dependencies into handler.js
+* create a `router.js` file in the `src` folder
+* paste router function and related dependencies into router.js
 
 
 ## Making your own modules!
@@ -42,7 +42,7 @@ we do this:
 var myModule = require('path/to/my/file');
 ```
 
-**Require your handler.js file into your server.js file**
+**Require your router.js file into your server.js file**
 
 If you run your server, you should get an error:
 ```bash
@@ -50,15 +50,15 @@ TypeError: listener must be a function
 ```
 ![require error](readme-images/step7-require-error.png)
 
-This is because we haven't "exported" the code inside the `handler.js` file, so it isn't available to us yet. Let's do that now.
+This is because we haven't "exported" the code inside the `router.js` file, so it isn't available to us yet. Let's do that now.
 
-**In `handler.js`, you will need to add the following**
+**In `router.js`, you will need to add the following**
 
 ```js
-module.exports = handler;
+module.exports = router;
 ```
 
-`module.exports` magically makes our handler function available to be required in other files.
+`module.exports` magically makes our router function available to be required in other files.
 
 Try running the server again and reloading the page.
 
@@ -66,7 +66,7 @@ Try running the server again and reloading the page.
 
 You should see a very broken webpage now. There's a reason for that!
 
-When the handler function was in `server.js`, the paths to our assets (html, css etc) that were assigned to the `pathToFile` and `pathToIndex` variables, were correct. Now the handler function has moved inside the `src` folder, we need to update the paths to our assets to make sure they point to the right location.
+When the router function was in `server.js`, the paths to our assets (html, css etc) that were assigned to the `pathToFile` and `pathToIndex` variables, were correct. Now the router function has moved inside the `src` folder, we need to update the paths to our assets to make sure they point to the right location.
 
 We can use **relative paths**. `..` means "go up one level to the folder above".  `.` means "look inside the current folder". For example: '../myComputer/home.txt' means "go up one folder, then go to the 'myComputer' folder, then go to the 'home.txt' file". Another example: './home.txt' means "look inside the current folder for the 'home.txt' file"
 
@@ -77,15 +77,9 @@ See if you can do this by yourself. Work with your team if you're struggling.
 
 ## More modularisation!!!
 
-You could split `handler.js` even further, by separating your routes from your handler. We will not do this now.
+You could split `router.js` even further, by separating your routes from your handlers. Go ahead and do this if you still have time.
 
 ---
-## Commit your changes
-
-```bash
-git add .
-git commit -m 'enter relevant message'
-```
 
 ## [**Next step >>>**](step08.md)
 

@@ -2,12 +2,6 @@
 
 For the rest of the workshop your job is to build the proper CMS. We have done the front-end code for you - you only need to worry about the server side of the application.
 
-Let's clean up unnecessary files.
-
-**Keep `handler.js`, but delete all the code so that it's empty**
-
-**Keep `server.js`, but delete all the code so that it's empty too**
-
 We need to change the `index.html` file. Replace the current content with:
 
 ```html
@@ -46,13 +40,5 @@ We need to change the `index.html` file. Replace the current content with:
     </body>
 </html>
 ```
-
-Now commit your changes:
-
-```bash
-git add .
-git commit -m 'enter relevant message'
-```
-
 
 ## [**Next step >>>**](step09.md)

@@ -15,16 +15,15 @@ Note the `<link>` and `<img>` tags in the `index.html` page. Here they're lookin
 
 So there's actually **three** requests going on here. One is the original browser request, another is a request sent by `<link>`, and the last one is a request sent by `<img>`
 
-#### So how do we deal with these two extra requests in our handler?
+#### So how do we deal with these two extra requests in our router?
 
-You *could* write more routes in your handler for the `image.jpg` and `main.css` files in the public folder. But what if you had multiple css files, or multiple images?  Writing routes for *all* of them would get very tedious very quickly!
+You *could* write more routes in your router for the `image.jpg` and `main.css` files in the public folder. But what if you had multiple css files, or multiple images?  Writing routes for *all* of them would get very tedious very quickly!
 
 Luckily, you don't need to write specific routes for everything.  You can write a generic route that is able to deal with lots of different **assets**.
 
-So now you're going to add one more route to your handler function, and that route should be able to successfully respond with both the `image.jpg` and `main.css` files, plus any other files that might be in public folder.
+So now you're going to add one more route to your router function, and that route should be able to successfully respond with both the `image.jpg` and `main.css` files, plus any other files that might be in public folder.
 
-**Add a final `else` to your `if-else` block**
-**Finish the code for the generic route**
+**Add a final `else` to your `if-else` block and finish the code for the generic route**
 
 ```js
 if (endpoint === '/') {
@@ -54,13 +53,9 @@ response.writeHead(200, {"Content-Type": "text/html"});
 
 This is perfect if the file we're sending back is an html file.  But if it's any other file, html will need to be replaced by the relevant filetype.
 
----
-## Commit your changes
+Feel free to refer back to the code-a-long for help but don't copy and paste!
 
-```bash
-git add .
-git commit -m 'enter relevant message'
-```
+---
 
 ## [**next step >>>**](step06.md)
 ---

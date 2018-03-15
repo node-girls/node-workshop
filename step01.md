@@ -58,14 +58,6 @@ Don't worry if you've made a mistake, your mentor can help you.
 
 Great!  You should now see a new file called `package.json`.
 
----
-## Commit your changes
-
-```bash
-git add .
-git commit -m 'enter relevant message'
-```
-
 ## [**next step >>>**](step02.md)
 ---
 ## Keywords

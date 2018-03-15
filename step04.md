@@ -12,7 +12,7 @@ An endpoint is the part of the url which comes after  `/`, in above case it's `/
 
 There is a particular method on the request object that allows you to see the endpoint, which was put in the url.
 
-**Inside your handler function, at the top, add the following:**
+**Inside your router function, at the top, add the following:**
 
 ```js
 var endpoint = request.url;
@@ -25,7 +25,7 @@ All requests use one of the HTTP methods. The main ones are: `GET, POST, PUT, DE
 
 ### Check which method was used for your request.
 
-**Type inside your handler function at the top :**
+**Type inside your router function at the top :**
 
 ```js
 var method = request.method;
@@ -35,7 +35,7 @@ console.log(method);
 
 ## 1. Create your own endpoints and send different responses.
 
-Now, you know how to get the endpoint using `request.url`. Change your handler function so that it sends one message when requested url is `/node` and another one when requested url is `/girls`.
+Now, you know how to get the endpoint using `request.url`. Change your router function so that it sends one message when requested url is `/node` and another one when requested url is `/girls`.
 
 Good luck :) Feel free to discuss it with your team or mentor.
 
@@ -61,7 +61,7 @@ Let's try it.
 var http = require('http');
 var fs = require('fs');
 
-function handler (request, response) {
+function router (request, response) {
 
   if (endpoint === "/") {
     response.writeHead(200, {"Content-Type": "text/html"});
@@ -82,12 +82,6 @@ function handler (request, response) {
 `__dirname` is a Node global object that gives you a path to current working directory. We can use this instead of writing the whole path. 
 
 ---
-## Commit your changes
-
-```bash
-git add .
-git commit -m 'enter relevant message'
-```
 
 ## [**next step >>>**](step05.md)
 

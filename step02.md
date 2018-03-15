@@ -116,12 +116,6 @@ If you see this...
 ### Congratulations!
 You have built yourself a server!
 ---
-## Commit your changes
-
-```bash
-git add .
-git commit -m 'enter relevant message'
-```
 
 ## [**next step** >>>](step03.md)
 ---

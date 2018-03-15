@@ -117,12 +117,6 @@ Find more information about Location [here](https://developer.mozilla.org/en-US/
 You'll also want to use a **different status code from 200**. Look at a list of [status codes here](https://httpstatuses.com/) and have an experiment.
 
 ---
-## Commit your changes
-
-```bash
-git add .
-git commit -m 'enter relevant message'
-```
 
 ## [**Next step >>>**](step07.md)
 

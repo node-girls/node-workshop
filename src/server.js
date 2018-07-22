@@ -21,7 +21,7 @@ function handler(request, response) {
   response.end(file);
 
       }
-    });
+    );
     response.write("hhh");
     response.end();
   } else if (endPoint === "/node") {

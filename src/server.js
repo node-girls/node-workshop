@@ -13,18 +13,18 @@ function handler(request, response) {
   console.log(endPoint);
   if (endPoint === "/") {
     response.writeHead(200, { "Content-Type": "text/html" });
-    fs.readFile(__dirname+'..'+'/public/index.html',function(error,file){
+    fs.readFile(__dirname+'/..'+'/public/index.html',function(error,file){
       if(error){
-        console.log("errrrr");
+        console.log("errrrr",error);
+      //  console.error();
         return;
       }
-  response.end(file);
+       response.end(file);
 
       }
     );
-    response.write("hhh");
-    response.end();
-  } else if (endPoint === "/node") {
+  }
+   else if (endPoint === "/node") {
     response.writeHead(200, { "Content-Type": "text/html" });
     response.write("hellow node");
     response.end();

@@ -1,36 +1,10 @@
 var http = require("http");
 var fs = require("fs");
-var server = http.createServer(handler);
+var router=require("./router.js");
+var port=5000;
 
-server.listen(5000, function() {
-  //console.log("server is ready to go !!!!!!!! :)");
+var server = http.createServer(router);
+
+server.listen(port, function() {
+  console.log("server is ready to go !!!!!!!! :)");
 });
-
-function handler(request, response) {
-  var endPoint = request.url;
-  var method = request.method;
-  console.log(method);
-  console.log(endPoint);
-  if (endPoint === "/") {
-    response.writeHead(200, { "Content-Type": "text/html" });
-    fs.readFile(__dirname+'/..'+'/public/index.html',function(error,file){
-      if(error){
-        console.log("errrrr",error);
-      //  console.error();
-        return;
-      }
-       response.end(file);
-
-      }
-    );
-  }
-   else if (endPoint === "/node") {
-    response.writeHead(200, { "Content-Type": "text/html" });
-    response.write("hellow node");
-    response.end();
-  } else if (endPoint === "/girls") {
-    response.writeHead(200, { "Content-Type": "text/html" });
-    response.write("hellloe girls");
-    response.end();
-  }
-}

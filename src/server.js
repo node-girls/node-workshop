@@ -8,9 +8,6 @@ var fs = require("fs");
 var message = "I am so happy to be part of Node Boys workshop";
 function handler(request, response) {
   let endpoint = request.url;
-  console.log(endpoint);
-  let method = request.method;
-  console.log(method);
 
   if (endpoint === "/") {
     fs.readFile(__dirname + "/../public/index.html", function(error, file) {
@@ -18,7 +15,27 @@ function handler(request, response) {
         response.writeHead(500);
         response.end("500");
       } else {
-        response.writeHead(200);
+        response.writeHead(200, { "Content-Type": "text/html" });
+        response.end(file);
+      }
+    });
+  } else if (endpoint === "/main.css") {
+    fs.readFile(__dirname + "/../public/main.css", (error, file) => {
+      if (error) {
+        response.writeHead(500);
+        response.end("500");
+      } else {
+        response.writeHead(200, { "Content-Type": "text/css" });
+        response.end(file);
+      }
+    });
+  } else if (endpoint === "/img/image.jpg") {
+    fs.readFile(__dirname + "/../public/img/image.jpg", (error, file) => {
+      if (error) {
+        response.writeHead(500);
+        response.end("500");
+      } else {
+        response.writeHead(200, { "Content-Type": "image/jpeg" });
         response.end(file);
       }
     });
@@ -30,6 +47,6 @@ function handler(request, response) {
 
 var server = http.createServer(handler);
 
-server.listen(3000, function() {
+server.listen(3006, function() {
   console.log("Server is listening on port 3000. Ready to accept requests!");
 });

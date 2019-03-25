@@ -1,11 +1,12 @@
 var http = require("http");
 var fs = require("fs");
-
+var querystring = require('querystring');
 // server.listen(3000, function() {
 //   console.log("Server is listening on port 3000. Ready to accept requests!")
 // });
 
 var message = "I am so happy to be part of Node Boys workshop";
+
 function handler(request, response) {
   let endpoint = request.url;
 
@@ -15,7 +16,9 @@ function handler(request, response) {
         response.writeHead(500);
         response.end("500");
       } else {
-        response.writeHead(200, { "Content-Type": "text/html" });
+        response.writeHead(200, {
+          "Content-Type": "text/html"
+        });
         response.end(file);
       }
     });
@@ -25,7 +28,9 @@ function handler(request, response) {
         response.writeHead(500);
         response.end("500");
       } else {
-        response.writeHead(200, { "Content-Type": "text/css" });
+        response.writeHead(200, {
+          "Content-Type": "text/css"
+        });
         response.end(file);
       }
     });
@@ -35,10 +40,23 @@ function handler(request, response) {
         response.writeHead(500);
         response.end("500");
       } else {
-        response.writeHead(200, { "Content-Type": "image/jpeg" });
+        response.writeHead(200, {
+          "Content-Type": "image/jpeg"
+        });
         response.end(file);
       }
     });
+  } else if (endpoint === "/create-post") {
+    var allTheData = '';
+    request.on('data', function(chunkOfData) {
+      allTheData += chunkOfData;
+    });
+    request.on('end', function() {
+      var convertedData = querystring.parse(allTheData);
+      console.log(convertedData);
+      response.end();
+    });
+    response.writeHead(302, {"Location": "/"});
   } else {
     response.writeHead(404);
     response.end("404");

@@ -52,7 +52,7 @@ We think learning together is really important.  We'd like you to do this worksh
 
 One of you can fork this repository and you can take it in turns to 'drive' (i.e. type).
 
-Don't worry, you can both get a copy of your work if the other person forks their partner's version too :smile:
+Don't worry, you can both get a copy of your work if the other person forks their partner's version too :wink:
 
 ---
 ## Walkthrough
